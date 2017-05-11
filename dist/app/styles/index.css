@@ -1,0 +1,779 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*用户登录*/
+#login {
+  display: none;
+  width: 30%;
+  height: 300px;
+  background: #f2f2f2;
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  text-align: center;
+  z-index: 5;
+}
+#login .closeBtn {
+  position: absolute;
+  top: 0;
+  right: -35px;
+}
+#login .loginTab {
+  color: #333;
+  width: 100%;
+  height: 50px;
+}
+#login .loginTab #login1 {
+  width: 50%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  float: left;
+}
+#login .loginTab #login2 {
+  width: 50%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  float: left;
+}
+#login .loginTab .btnColor {
+  color: #67bbff;
+  background: white;
+}
+#login #loginDivs {
+  width: 100%;
+  height: 250px;
+  background: white;
+  overflow: hidden;
+}
+#login #loginDivs #loginDiv1,
+#login #loginDivs #loginDiv2 {
+  width: 100%;
+  height: 250px;
+  float: left;
+  background: white;
+}
+#login #loginDivs #loginDiv1 .checkBtn,
+#login #loginDivs #loginDiv2 .checkBtn {
+  margin-top: 10px;
+}
+#login #loginDivs #loginDiv1 .checkBtn .haveLogin,
+#login #loginDivs #loginDiv2 .checkBtn .haveLogin {
+  color: #3faeff;
+  cursor: pointer;
+}
+#login #loginDivs .pwdYN {
+  position: absolute;
+  left: 70px;
+  margin-top: 20px;
+}
+#login #loginDivs .remberPas {
+  font-size: 12px;
+  font-weight: 100;
+}
+#login #loginDivs .forgetPas {
+  font-size: 12px;
+  font-weight: 100;
+  position: absolute;
+  right: 70px;
+  margin-top: 25px;
+  color: #54b4ff;
+}
+#login #loginDivs .loginYN {
+  margin-top: 50px;
+}
+#login #loginDivs .loginYN .regisGo {
+  color: #24a7ff;
+  cursor: pointer;
+}
+#login #loginDivs #loginDiv1 {
+  text-align: center;
+  padding-top: 20px;
+  border: 0px;
+}
+#login #loginDivs #loginDiv1 .form-control {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 0%;
+}
+#login #loginDivs #loginDiv1 .phoneNumber {
+  border-bottom: 1px solid #00a0fa;
+  border-top: 0px;
+}
+#login #loginDivs #loginDiv1 .phoneYan {
+  border-top: 1px solid #00a0fa;
+}
+#login #loginDivs #loginDiv1 .loginBtnClick {
+  width: 60%;
+  border-radius: 0;
+  color: white;
+  margin-top: 10px;
+  background: #00a0ff;
+}
+#login #loginDivs #loginDiv1 .checkBtn {
+  margin-top: 10px;
+}
+#login #loginDivs #loginDiv1 .checkBtn .regisGo {
+  color: #24a7ff;
+  cursor: pointer;
+}
+#login #loginDivs #loginDiv2 {
+  width: 100%;
+}
+#login #loginDivs #loginDiv2 .imgRegis {
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+#login #loginDivs #loginDiv2 #weiboLog {
+  width: 25%;
+  margin-right: 15px;
+}
+#login #loginDivs #loginDiv2 #wecharLog {
+  width: 25%;
+  margin-left: 15px;
+}
+#login #loginDivs #loginDiv2 .checkBtn .regisGo {
+  color: #24a7ff;
+  cursor: pointer;
+}
+/*用户注册*/
+#regis {
+  width: 30%;
+  height: 300px;
+  background: #f2f2f2;
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  text-align: center;
+  z-index: 15;
+}
+#regis .closeBtn {
+  position: absolute;
+  top: 0;
+  right: -35px;
+}
+#regis .regisTab {
+  color: #333;
+  width: 100%;
+  height: 50px;
+}
+#regis .regisTab #regis1 {
+  width: 50%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  float: left;
+}
+#regis .regisTab #regis2 {
+  width: 50%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  float: left;
+}
+#regis .regisTab .btnColor {
+  color: #67bbff;
+  background: white;
+}
+#regis #regisDivs {
+  width: 100%;
+  height: 250px;
+  background: white;
+  overflow: hidden;
+}
+#regis #regisDivs #regisDiv1,
+#regis #regisDivs #regisDiv2 {
+  width: 100%;
+  height: 250px;
+  float: left;
+  background: white;
+}
+#regis #regisDivs #regisDiv1 .checkBtn,
+#regis #regisDivs #regisDiv2 .checkBtn {
+  margin-top: 10px;
+}
+#regis #regisDivs #regisDiv1 .checkBtn .haveLogin,
+#regis #regisDivs #regisDiv2 .checkBtn .haveLogin {
+  color: #3faeff;
+  cursor: pointer;
+}
+#regis #regisDivs #regisDiv1 {
+  text-align: center;
+  padding-top: 20px;
+}
+#regis #regisDivs #regisDiv1 .form-control {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 0%;
+}
+#regis #regisDivs #regisDiv1 .phoneNumber {
+  border-bottom: 1px solid #00a0fa;
+  border-top: 0px;
+}
+#regis #regisDivs #regisDiv1 .phoneYan {
+  border-top: 1px solid #00a0fa;
+}
+#regis #regisDivs #regisDiv1 #phoneReg {
+  position: absolute;
+  top: 78px;
+  right: 10%;
+  z-index: 5;
+}
+#regis #regisDivs #regisDiv1 #phoneReg #errorImg {
+  display: none;
+}
+#regis #regisDivs #regisDiv1 #btnSendCode {
+  margin-top: 30px;
+  cursor: pointer;
+  color: #3faeff;
+  border: 0;
+  background: white;
+}
+#regis #regisDivs #regisDiv1 .nextBtnClick {
+  width: 60%;
+  border-radius: 0;
+  color: white;
+  margin-top: 10px;
+  background: #00a0ff;
+}
+#regis #regisDivs #regisDiv1 .checkBtn {
+  margin-top: 10px;
+}
+#regis #regisDivs #regisDiv1 .checkBtn .haveLogin {
+  color: #3faeff;
+  cursor: pointer;
+}
+#regis #regisDivs #regisDiv2 {
+  width: 100%;
+}
+#regis #regisDivs #regisDiv2 .imgRegis {
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+#regis #regisDivs #regisDiv2 #weibo {
+  width: 25%;
+  margin-right: 15px;
+}
+#regis #regisDivs #regisDiv2 #wechar {
+  width: 25%;
+  margin-left: 15px;
+}
+.userMsg {
+  display: none;
+  z-index: 15;
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  background: #fff;
+  top: 40%;
+  margin-left: 25%;
+  text-align: center;
+}
+.userMsg .userNP {
+  height: 200px;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.userMsg .userNP p {
+  font-size: 26px;
+  padding-top: 30px;
+}
+.userMsg .userNP input {
+  border: 0px;
+  text-align: center;
+  height: 30px;
+  color: #f0f0f0;
+}
+.userMsg .userNP .hr {
+  border-top: 1px solid #00a0fa;
+}
+.userMsg .userTel {
+  height: 300px;
+  background: #f5f5f5;
+  padding-top: 20px;
+}
+.userMsg .userTel div {
+  width: 78%;
+  margin: 0 auto;
+  text-align: left;
+}
+.userMsg .userTel div input {
+  border: 0px;
+  background: #f5f5f5;
+  height: 20px;
+}
+.userMsg .userTel .userJs {
+  height: 40px;
+  line-height: 30px;
+  text-align: left;
+}
+.userMsg .userTel .userJs .spanLabel {
+  float: left;
+}
+.userMsg .userTel .userX {
+  height: 140px;
+  line-height: 30px;
+  text-align: left;
+}
+.userMsg .userTel .userX .spanLabel {
+  float: left;
+}
+.userMsg .userTel .hrBlack {
+  border-top: 1px solid #dcdcdc;
+}
+.userMsg .userTel .inpCheck {
+  float: left;
+  height: 200px;
+  margin-left: 10px;
+}
+.userMsg .userTel .inpCheck label {
+  height: 30px;
+  line-height: 30px;
+}
+.userMsg .userTel .inpCheck label span {
+  vertical-align: top;
+  font-size: 12px;
+  font-weight: 100;
+}
+.userMsg .successBtn {
+  text-align: center;
+  background: #00a0ff;
+  color: white;
+  border: 0px;
+  padding: 5px 0;
+  width: 30%;
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+}
+.userMsg .closeBtn {
+  position: absolute;
+  top: 0px;
+  right: -35px;
+}
+#popWindow {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  filter: alpha(opacity=20);
+  z-index: 1;
+  position: absolute;
+}
+.indexWrap {
+  width: 100%;
+  position: relative;
+  /*topLoop 闭合标签   轮播图*/
+  /*图片上文字  topText*/
+  /* textExplain 结束 */
+  /* textContent 结束  */
+}
+.indexWrap .topLoop {
+  width: 100%;
+  position: relative;
+  height: 350px;
+}
+.indexWrap .topLoop .swiper-container {
+  z-index: 0;
+  height: 100%;
+}
+.indexWrap .topLoop img {
+  width: 100%;
+  height: 100%;
+}
+.indexWrap .topText {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  /*登录和头像  loginDiv*/
+  /*join*/
+}
+.indexWrap .topText .header {
+  background: #2d3846;
+  height: 45px;
+  line-height: 45px;
+}
+.indexWrap .topText .topLogo {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  height: 30px;
+}
+.indexWrap .topText .loginDiv {
+  width: 20%;
+  position: absolute;
+  left: 65%;
+  color: #ccc;
+  font-size: 14px;
+  float: left;
+  cursor: pointer;
+  /*新增小蓝点*/
+  /*结束*/
+  /* topNlogin */
+}
+.indexWrap .topText .loginDiv .allPro {
+  margin-left: 10px;
+}
+.indexWrap .topText .loginDiv .message {
+  margin-left: 10px;
+  position: relative;
+}
+.indexWrap .topText .loginDiv #blue {
+  position: absolute;
+  top: 10px;
+  left: 87px;
+}
+.indexWrap .topText .loginDiv #loginLogo {
+  margin-left: 15px;
+}
+.indexWrap .topText .loginDiv .topNlogin {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  margin-top: 7px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  text-align: center;
+}
+.indexWrap .topText .loginDiv .topNlogin .people {
+  width: 60%;
+  margin-top: -20px;
+}
+.indexWrap .topText .topIntroduce {
+  color: #ccc;
+  width: 500px;
+  position: relative;
+  margin-top: 20px;
+  font-weight: 100;
+  margin: 20px auto;
+}
+.indexWrap .topText .topIntroduce p {
+  font-size: 24px;
+}
+.indexWrap .topText .topSeek {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.indexWrap .topText .topSeek .seekBtn {
+  display: inline;
+  position: relative;
+  top: -32px;
+  left: 94%;
+}
+.indexWrap .topText .topSeek .seekBtn img {
+  width: 4%;
+  z-index: 10;
+}
+.indexWrap .topText .topSeek #checkSeek {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+.indexWrap .topText .hotSeek {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 5px;
+}
+.indexWrap .topText .join {
+  margin: 0 auto;
+  width: 40%;
+}
+.indexWrap .topText .join .btn-default {
+  width: 100%;
+  padding: 5px 10%;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-weight: 200;
+}
+.indexWrap .textExplain {
+  width: 50%;
+  margin: 0 auto;
+}
+.indexWrap .textExplain .textSite {
+  width: 100%;
+  height: 250px;
+}
+.indexWrap .textExplain .textSite .textBig {
+  float: left;
+  width: 33.3%;
+}
+.indexWrap .textExplain .textSite .textBig .textImg {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.indexWrap .textExplain .textSite .textBig .textImg img {
+  width: 20%;
+  text-align: center;
+}
+.indexWrap .textExplain .textSite .textBig .textMax {
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+.indexWrap .textExplain .textSite .textBig .textMin {
+  font-size: 12px;
+  margin-top: 25px;
+  text-align: center;
+}
+.indexWrap #textContent {
+  width: 100%;
+  margin-left: auto;margin-right: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom:50px;
+  overflow: hidden;
+  /* ul 结束  */
+}
+.indexWrap #textContent ul {
+  margin: 46px auto 0;
+  max-width: 1546px;
+  padding-bottom: 115px;
+  box-sizing:border-box;
+}
+.indexWrap #textContent ul .con {
+  width: 280px;
+  height:450px;
+  float:left;
+  position:relative;
+  cursor:pointer;
+  margin: 0 22px 22px 0;
+  border-radius: 4px;
+  /* 项目参与人 结束*/
+  /* writeCon 项目发起人结束*/
+}
+.indexWrap #textContent ul .con .proImg {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-image: url(../images/common/pic.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.indexWrap #textContent ul .con .author {
+  width: 100%;
+  height: 80px;
+  background: white;
+  padding: 5px 0px;
+}
+.indexWrap #textContent ul .con .author .authorMsg {
+  width: 20%;
+  text-align: center;
+  float: left;
+}
+.indexWrap #textContent ul .con .author .authorMsg .authorImg {
+  border-radius: 50%;
+  width: 50px;
+  cursor: pointer;
+}
+.indexWrap #textContent ul .con .author .partner {
+  float: left;
+  padding-left: 10px;
+  font-size: 12px;
+  width: 80%;
+}
+.indexWrap #textContent ul .con .author .partner .partner1 {
+  width: 100%;
+}
+.indexWrap #textContent ul .con .author .partner .interact {
+  height: 15px;
+}
+.indexWrap #textContent ul .con .author .partner .interact img {
+  height: 15px;
+  width: 15px;
+}
+.indexWrap #textContent ul .con .author .partner .interact .likeNum {
+  color: #00a0ff;
+}
+.indexWrap #textContent ul .con .author .partner .interact .zanNum {
+  color: #00a0ff;
+}
+.indexWrap #textContent ul .con .countPP {
+  color: #00a0ff;
+}
+.indexWrap #textContent ul .con .txt {
+  /*  项目参与人信息*/
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: none;
+}
+.indexWrap #textContent ul .con .txt .friends {
+  width: 100%;
+  height: 100px;
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+.indexWrap #textContent ul .con .txt img {
+  border-radius: 50%;
+  width: 80%;
+}
+.indexWrap #textContent ul .con .txt .part {
+  width: 25%;
+  padding: 5px 0px;
+}
+.indexWrap #textContent ul .con .txt p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.indexWrap #textContent ul .con .writeCon {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: none;
+  /*proHot 结束*/
+  /*  writeMess 结束*/
+}
+.indexWrap #textContent ul .con .writeCon .writeImg {
+  height: 90px;
+  width: 90px;
+  border: 2px solid #493c37;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.indexWrap #textContent ul .con .writeCon p {
+  font-size: 20px;
+}
+.indexWrap #textContent ul .con .writeCon .proHot {
+  /*proHot 开始*/
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.indexWrap #textContent ul .con .writeCon .proHot img {
+  height: 15px;
+}
+.indexWrap #textContent ul .con .writeCon .proHot .proNum {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #484747;
+}
+.indexWrap #textContent ul .con .writeCon .proHot .big {
+  font-size: 14px;
+}
+.indexWrap #textContent ul .con .writeCon .writeMess {
+  width: 84%;
+  margin: 15px auto;
+  font-size: 12px;
+  /*  div 结束*/
+}
+.indexWrap #textContent ul .con .writeCon .writeMess div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.indexWrap #textContent ul .con .writeCon .writeMess div p {
+  float: left;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 100;
+  color: #ccc;
+  margin: 0 0;
+}
+.indexWrap #textContent ul .con .writeCon .writeMess div .p1 {
+  width: 20%;
+}
+.indexWrap #textContent ul .con .writeCon .writeMess div .p2 {
+  width: 75%;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.indexWrap #textContent ul .con .writeCon .writeMess div .p3 {
+  width: 75%;
+  height: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.indexWrap #textContent ul .countP {
+  color: #00a0ff;
+  position: relative;
+  top: -50px;
+  left: 10px;
+  z-index: 10;
+}
+/*indexWrap 的div 闭合*/
+footer {
+  width: 100%;
+  height: 60px;
+  background: #333;
+  line-height: 60px;
+  padding-left: 20%;
+}
+footer .footerLogo {
+  width: 10%;
+  margin-right: 40%;
+}
+footer .about {
+  color: #8f8f8f;
+}
+
+ @media screen and (max-width: 1920px){
+     #bigContentbox{
+      width: 1546px;
+      margin: 0 auto;
+     }   
+}
+ @media screen and (max-width: 1637px){
+     #bigContentbox{
+      width: 1210px;
+      margin: 0 auto;
+     }   
+}
+
+ @media screen and (max-width: 1260px){
+     #bigContentbox{
+      width: 910px;
+      margin: 0 auto;
+     }   
+}
+ @media screen and (max-width: 965px){
+     #bigContentbox{
+      width: 605px;
+      margin: 0 auto;
+     }   
+}
+

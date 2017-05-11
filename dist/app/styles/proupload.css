@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+}
+.clear::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+ul li {
+  list-style: none;
+}
+.pmwrap {
+  width: 100%;
+  /*proheader 结束*/
+  /*newProject 结束*/
+}
+.pmwrap .pmheader {
+  width: 100%;
+  /*pmnav 结束*/
+}
+.pmwrap .pmheader .pmnav {
+  width: 100%;
+  height: 45px;
+  background: #2d3846;
+  line-height: 45px;
+  position: relative;
+  top: 0;
+  z-index: 5;
+  /* topSeek 结束 */
+}
+.pmwrap .pmheader .pmnav a .shining {
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  margin-left: 20%;
+}
+.pmwrap .pmheader .pmnav .topSeek {
+  height: 45px;
+  width: 25%;
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  margin-left: 35%;
+  /* pmSeek 结束 */
+}
+.pmwrap .pmheader .pmnav .topSeek .navSeek {
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  padding: 3px 3px;
+}
+.pmwrap .pmheader .pmnav .topSeek .pmSeek {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.pmwrap .pmheader .pmnav .topSeek .pmSeek img {
+  height: 16px;
+}
+.pmwrap .pmheader .pmnav .addPro {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.pmwrap .pmheader .pmnav .allPro {
+  margin-left: 1%;
+  margin-bottom: 10px;
+}
+.pmwrap .pmheader .pmnav .pmMass {
+  margin-left: 1%;
+  margin-bottom: 10px;
+}
+.pmwrap .pmheader .pmnav .pmBlue {
+  margin-left: -0.5%;
+  margin-bottom: 25px;
+}
+.pmwrap .pmheader .pmnav .pmName {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  margin-left: 1%;
+}
+.pmwrap .pmheader .pmnav .pmPhoto {
+  width: 35px;
+  margin-left: 100px;
+  margin-bottom: 2px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+}
+.pmwrap .pmheader .projectList p {
+  margin: 0 0 10px;
+}
+.pmwrap .newProject {
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+}
+.pmwrap .newProject .projectPic {
+  width: 200px;
+  height: 250px;
+  margin-left: 15%;
+  float: left;
+}
+.pmwrap .newProject .projectPic .input-group {
+  height: 100%;
+}
+.pmwrap .newProject .projectPic .input-group .big-photo {
+  height: 100%;
+}
+.pmwrap .newProject .projectPic .input-group #preview {
+  height: 100%;
+}
+.pmwrap .newProject .projectPic .input-group #preview #imghead {
+  width: 100%;
+  height: 100%;
+}
+.pmwrap .newProject .projectMess {
+  float: left;
+  width: 400px;
+  margin-left: 100px;
+}
+.pmwrap .newProject .projectMess input {
+  background-color: #f4f7f8;
+  border: 1px solid #ccc;
+}
+.pmwrap .newProject .projectMess textarea {
+  background-color: #f4f7f8;
+  border: 1px solid #ccc;
+}
+.pmwrap .newProject .projectMess .inpLeft {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.pmwrap .newProject .projectMess .inpLeft p {
+  width: 80px;
+  float: left;
+}
+.pmwrap .uploadBtn {
+  width: 60%;
+  height: 150px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.pmwrap .previewPublish {
+  width: 100%;
+  height: 99px;
+  background-color: #efefef;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.pmwrap .previewPublish div {
+  width: 200px;
+  height: 40px;
+  background-color: #ccc;
+  color: white;
+  margin: 0 20px;
+  line-height: 40px;
+}
+/*pmwrap 结束*/
+footer {
+  height: 60px;
+  background: #333;
+  line-height: 60px;
+  padding-left: 20%;
+}
+footer .footerLogo {
+  width: 10%;
+  margin-right: 40%;
+  /*margin-top: 15px;*/
+}
+footer .about {
+  color: #8f8f8f;
+}
+footer img {
+  vertical-align: middle;
+}

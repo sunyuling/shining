@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>项目展示</title>
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  	<link rel="stylesheet" type="text/css" href="styles/component.css">
+	<link rel="stylesheet" type="text/css" href="styles/projectShow.css">
+</head>
+<body>
+<div class="containerWrap">
+<div class="mp-pusher" id="mp-pusher">
+<div class="sidebar mp-menu" id="mp-menu">
+  <div class="mp-level"><br><br>
+      <h2 class="icon icon-world">Aragaki</h2><br>
+      <hr >
+      <ul>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMfp.png">&nbsp;&nbsp;我关注的人</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftfm.png">&nbsp;&nbsp;关注我的人</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMfocus.png">&nbsp;&nbsp;我关注的项目</a></li><hr >
+          <li class="icon left-list"><a href="#"><img src="images/common/leftmpage.png">&nbsp;&nbsp;个人主页</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/propartner.png">&nbsp;&nbsp;项目伙伴</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMpro.png">&nbsp;&nbsp;我的项目</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftcollect.png">&nbsp;&nbsp;我的收藏</a></li>
+      </ul>
+  </div>  <!-- mp-level 结束 -->
+</div>  <!-- mp-menu  nav 结束 -->
+<!-- 新增 结束 -->
+<!-- pmwrap 开始 -->
+<div class="pmwrap scroll indexWrap"> 
+	    <!-- 新增 -->
+    <div class="scroller-inner">
+        <div class="content clearfix">
+            <div class="block clearfix">
+              <p><a href="#" id="trigger" class="menu-trigger"><img src="images/common/leftBtn.png"></a></p>
+            </div>
+        </div>
+    </div>  <!-- /scroller-inner -->
+    <!-- 新增 结束 -->
+
+	<!-- pmheader 开始 -->
+	<div class="pmheader">
+		<!-- pmnav 开始 -->
+		<div class="pmnav">
+			<a href="index.html"><img src="images/common/shining.png" class="shining"></a>
+			<div class="topSeek">
+				<input type="text" name="" placeholder="搜索" class="navSeek">
+				<div class="pmSeek"><img src="images/common/maxglass.png"></div>
+			</div>
+			
+			<a href="javascript:void(0)"><img src="images/common/publish.png" class="addPro"></a>
+            <a href="javascript:void(0)"><img src="images/common/allPro.png" class="allPro"></a>
+			<a href="#"><img src="images/common/massage.png" class="pmMass">
+			<img src="images/common/blue.png" class="pmBlue"></a>
+			<p class="pmName">Aragaki</p>
+			<a href=""><img src="images/common/aimg.gif" class="pmPhoto"></a>
+		</div>	<!-- pmnav 结束 -->
+		<!-- 新增 项目列表 -->
+      <div class="projectList">
+        <p><a href="#">我的项目</a></p>
+        <p><a href="#">新建项目</a></p>
+        <p><a href="#">更新项目</a></p>
+      </div>
+      <!-- 结束新增 项目列表 -->
+	
+	</div>	<!-- pmheader 结束-->
+	<!-- newProject 开始-->
+	<div class="newProject">
+	<!-- project picture 开始-->
+	<div class="projectPic clear">
+		<!--input-group start-->
+        <div class="input-group row">
+          
+            <div class="col-sm-9 big-photo">
+                <div id="preview">
+                    <img id="imghead" src="images/common/proImg.png" width="90" height="90" onclick="$('#previewImg').click();">
+                </div>         
+            	<input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
+                	<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">
+            </div>
+        </div>
+        <!--input-group end-->
+	</div>
+	<!-- project picture 结束-->
+	<div class="deletPro">
+		删除整个项目
+	</div>
+	<!-- projectMess 开始 -->
+	<div class="projectMess clear">
+		<div class="clear inpTop"><p class="clear">项目名称</p>&nbsp;<input type="text" name="" value="英特尔品牌日" disabled="disabled"></div>
+		<hr style="color:#bbb;">
+		<div class="clear inpLeft"><p class="clear">项目职责</p>&nbsp;<input type="text" name="" value="Inter Brand Day" disabled="disabled"></div>	
+		<div class="clear inpLeft"><p class="clear">项目职责</p>&nbsp;<input type="text" name="" value="Inter Brand Day" disabled="disabled"></div>	
+		<div class="clear inpLeft"><p class="clear">项目日期</p>&nbsp;<input type="text" name="" value="Inter Brand Day" disabled="disabled"></div>	
+		<div class="clear inpLeft"><p class="clear">项目日期</p>&nbsp;<input type="text" name="" value="Inter Brand Day" disabled="disabled"></div>	
+		<div class="clear inpLeft"><p class="clear">项目地点</p>&nbsp;<input type="text" name="" value="北京" disabled="disabled"></div>	
+		<div class="clear inpLeft"><p class="clear">项目地点</p>&nbsp;<input type="text" name="" value="北京" disabled="disabled"></div>	
+		<hr style="color:#bbb;">
+		<div class="clear inpTop"><p class="clear">项目介绍</p>&nbsp;<textarea cols="50" rows="5">人类通过分析他人的眼神，揣摩对方情绪。此过程原本只是一种对环境刺激的普遍反映，而后演化为深刻感受的交流方式。</textarea></div><br><br><br>
+		<div class="close clear"><img src="images/common/lock.png"></div> 
+		<div class="zan clear"><img src="images/common/zan.png"></div> 
+		<div class="attention clear"><img src="images/common/lock.png"></div> 
+		<div class="share clear"><img src="images/common/lock.png"></div> 
+	</div>
+	<!-- projectMess 结束 -->
+	</div>
+	<!-- newProject 结束-->
+
+
+
+</div>	<!-- pmwrap 结束 -->
+</div>	<!-- class="mp-pusher" id="mp-pusher" 结束-->
+</div>	<!-- containerWrap 结束-->
+
+<footer> 
+    <img src="images/common/logo.png" class="footerLogo">
+    <span class="about">关于我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="about">联系我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><img src="images/common/w.png"></span>
+</footer>	
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/personmanage.js"></script>
+<script type="text/javascript" src="scripts/scroll.js"></script>
+<script type="text/javascript" src="scripts/component.js"></script>
+<script type="text/javascript">
+new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+</script>
+</html>
