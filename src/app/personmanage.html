@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>个人管理页</title>
+  <!-- 新增标签 -->
+  	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+  	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  	<link rel="stylesheet" type="text/css" href="styles/component.css">
+  <!-- 结束 -->
+	<link rel="stylesheet" type="text/css" href="styles/personmanage.css">
+	
+</head>
+<body>
+<!-- 每个项目图片 添加a标签 添加点击事件 点击进入项目页 -->
+<!-- 每个项目负责人头像 添加a标签，点击出现详情信息，再次点击进入个人展示 -->
+<!-- 新增 -->
+<div class="containerWrap">
+<div class="mp-pusher" id="mp-pusher">
+<div class="sidebar mp-menu" id="mp-menu">
+  <div class="mp-level"><br><br>
+      <h2 class="icon icon-world">Aragaki</h2><br>
+      <hr >
+      <ul>
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/leftMfp.png">&nbsp;&nbsp;我关注的人</a></li>
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/leftfm.png">&nbsp;&nbsp;关注我的人</a></li>
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/leftMfocus.png">&nbsp;&nbsp;我关注的项目</a></li><hr >
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/leftmpage.png">&nbsp;&nbsp;个人主页</a></li>
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/propartner.png">&nbsp;&nbsp;项目伙伴</a></li>
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/leftMpro.png">&nbsp;&nbsp;我的项目</a></li>
+          <li class="icon left-list"><a href="javascript:void(0)"><img src="images/common/leftcollect.png">&nbsp;&nbsp;我的收藏</a></li>
+      </ul>
+  </div>  <!-- mp-level 结束 -->
+</div>  <!-- mp-menu  nav 结束 -->
+<!-- 新增 结束 -->
+<!-- pmwrap 开始 -->
+<div class="pmwrap scroll indexWrap"> 
+	    <!-- 新增 -->
+    <div class="scroller-inner">
+        <div class="content clearfix">
+            <div class="block clearfix">
+              <p><a href="javascript:void(0)" id="trigger" class="menu-trigger"><img src="images/common/leftBtn.png"></a></p>
+            </div>
+        </div>
+    </div>  <!-- /scroller-inner -->
+    <!-- 新增 结束 -->
+
+	<!-- pmheader 开始 -->
+	<div class="pmheader">
+		<!-- pmnav 开始 -->
+		<div class="pmnav">
+			<a href="index.html"><img src="images/common/shining.png" class="shining"></a>
+			<div class="topSeek">
+				<input type="text" name="" placeholder="搜索" class="navSeek">
+				<div class="pmSeek"><img src="images/common/maxglass.png"></div>
+			</div>
+			
+			<a href="javascript:void(0)"><img src="images/common/publish.png" class="addPro"></a>
+            <a href="javascript:void(0)"><img src="images/common/allPro.png" class="allPro"></a>
+			<a href="javascript:void(0)"><img src="images/common/massage.png" class="pmMass">
+			<img src="images/common/blue.png" class="pmBlue"></a>
+			<p class="pmName">Aragaki</p>
+			<a href=""><img src="images/common/aimg.gif" class="pmPhoto"></a>
+		</div>	<!-- pmnav 结束 -->
+		<!-- 新增 项目列表 -->
+      <div class="projectList">
+        <p><a href="javascript:void(0)">我的项目</a></p>
+        <p><a href="projectupload.html">新建项目</a></p>
+        <p><a href="javascript:void(0)">更新项目</a></p>
+      </div>
+      <!-- 结束新增 项目列表 -->
+		<!-- pmBack 开始 -->
+		<div class="pmBack">
+			<img src="images/common/bg.png" class="bg">
+			<div class="bgmen"></div>
+			<div class="pmChange">
+				<img src="images/common/peoplehead.png">
+				<input type="file" name="" class="changeHeadpic"><img src="images/common/changehead.png" class="pmChangemen">
+			</div>
+			<div class="pmUser">
+				<p class="pmN">Aragaki</p>
+				<p class="pmT">UI设计师</p>
+			</div>
+			<div class="pmTeam">
+				<div class="pmProject1 clear">
+					<p class="friend">项目伙伴</p><br>
+					<a href="#"><img src="images/common/propartner.png" class="projectPartner">
+					<p class="friend projectPartnerNum">22</p></a>
+				</div>
+				<div class="pmProject2 clear">
+					<p class="friend">关注</p><br>
+					<div class="g1 clear">
+						<a href="#"><img src="images/common/noticem.png">
+						<p class="friend">200</p></a>
+					</div>
+					<div class="g1 clear">
+						<a href="#"><img src="images/common/mnotice.png">
+						<p class="friend">22</p></a>
+					</div>
+				</div>	<!-- pmProject2 结束 -->
+				<div class="pmProject2 clear">
+					<p class="friend">项目</p><br>
+					<div class="g1 clear">
+						<a href="#"><img src="images/common/noticeMpro.png">
+						<p class="friend">200</p></a>
+					</div>
+					<div class="g1 clear">
+						<a href="#"><img src="images/common/Mnoticepro.png">
+						<p class="friend">22</p></a>
+					</div>
+				</div>	<!-- pmProject2 结束 -->
+			</div>	<!-- pmTeam 结束 -->
+			<div class="slide"><img src="images/common/drag.png"></div>
+			<input type="file" name="" value="" class="bgChange">
+			<img src="images/common/changebg.png" class="bgChangeBtn">
+		</div>	<!-- pmBack 结束 -->
+	</div>	<!-- pmheader 结束-->
+	<div class="myInp">  <!-- myInp 开始-->
+		<div class="clear inpLeft"><p class="clear">真实姓名</p>&nbsp;&nbsp;<input type="text" name="" value="新恒结衣"  disabled="disabled"></div>
+		<div class="clear inpRight"><p class="clear">就职公司</p>&nbsp;&nbsp;<input type="text" name="" value="数域北京" disabled="disabled"></div>
+		<div class="clear inpLeft"><p class="clear">简称/英文</p>&nbsp;&nbsp;<input type="text" name="" value="Aragaki" disabled="disabled"></div>
+		<div class="clear inpRight"><p class="clear">公司简称/英文</p>&nbsp;&nbsp;<input type="text" name="" value="IDL" disabled="disabled"></div>
+		<div class="clear inpLeft"><p class="clear">出生日期</p>&nbsp;&nbsp;<input type="date" name="" disabled="disabled"></div>
+		<div class="clear inpRight"><p class="clear">职位</p>&nbsp;&nbsp;<input type="text" name="" value="UI设计师" disabled="disabled"></div>
+		<div class="clear inpLeft"><p class="clear">性别</p>&nbsp;&nbsp;
+		<label><input type="radio" name="sex" disabled="disabled">男</label>
+		<label><input type="radio" name="sex" disabled="disabled">女</label>
+		</div>
+		<div class="clear inpRight"><p class="clear">擅长技能</p>&nbsp;&nbsp;<input type="text" name="" value="Photoshop" disabled="disabled"></div>
+		<div class="clear inpLeft"><p class="clear">所在区域</p>&nbsp;&nbsp;<input type="text" name="" value="北京" disabled="disabled"></div>
+		<div class="clear inpRight"><p class="clear">教育</p>&nbsp;&nbsp;<input type="text" name="" value="大专" disabled="disabled"></div>
+		<div class="clear inpLeft"><p class="clear">工作语言</p>&nbsp;&nbsp;<input type="text" name="" value="中文" disabled="disabled"></div>
+		<div class="clear inpRight"><p class="clear">关注行业</p>&nbsp;&nbsp;<input type="text" name="" value="IT、人力" disabled="disabled"></div>
+		<div class="clear inpLeft"><p class="clear">联系方式</p>&nbsp;&nbsp;<input type="text" name="" value="13888888888" class="tel" disabled="disabled"><label><input type="checkbox" class="open1" disabled="disabled">公开</label></div>
+		<div class="clear inpRight"><p class="clear">简介</p>&nbsp;&nbsp;<textarea cols="30" rows="5" disabled="disabled">简介</textarea></div>
+		<div class="clear inpLeft email"><p class="clear">邮箱</p>&nbsp;&nbsp;<input type="email" name="" value="888888@qq.com" class="tel" disabled="disabled"><label><input type="checkbox" class="open2" disabled="disabled">公开</label></div>
+		<img src="images/common/lock.png" class="close">
+	</div>		<!-- myInp 结束-->
+	<div class="myList" id="myList">
+          <div class="myAbout">
+          <div class="my1 clear btnColor">我的关注</div>
+          <div class="my2 clear" class="clear">我的展示</div>
+          </div>
+          <div class="myContent">
+              <div class="con1"> 
+              <div class="npm1">
+              	<div class="myPic clear">
+				<div class="myCon clear">
+					<div class="img1"></div>
+					
+					<div class="men1">
+						<div class="writePic clear">
+							<a href="javascript:void(0)"><img src="images/common/aimg.gif"></a>
+						</div>
+						<div class="writeN clear">
+							<p>发布者</p>
+							<p class="writeName">Aaron</p>
+						</div>
+						<a href="javascript:void(0)"><img src="images/common/procover.png" class="img2 clear"></a>
+						<div class="project clear">
+							<p>所属项目</p>
+							<p class="proName">英特尔品牌日</p>
+						</div>
+							
+					</div>
+                 </div>
+              	</div>
+                 
+                <div class="comment clear">
+					<input type="text" name="" value="活动海报" class="activeName" disabled="disabled">
+					
+					<hr style="size: 1;">
+					<div class="projectDescript">
+						<span>描述：</span><textarea clos="5" rows="3" disabled="disabled">描述...</textarea>
+					</div><hr style="size: 1;">
+					<div class="panel1" id="demo1">
+						<div class="_panel-box panel-box1">
+							<div class="item otherItem clear">
+								<img src="images/common/aimg.gif" class="otherPhoto clear">
+								<div class="otherCon clear">
+									<p class="otherName clear">Olsen</p>
+									<span class="otherDis clear">请问这是哪？</span>
+								</div>
+							</div>
+						</div>
+					</div>  <!-- panel1 结束 -->
+					<hr style="size: 1;">
+					<input type="text" name="" class="addCon addCon1" placeholder="添加评论给好友">
+					<input type="button" name="" value="添加评论" class="addBtn addBtn1">
+					<hr style="size: 1;">
+					<div class="pmActive">
+						<img src="images/common/zan.png" class="zanA"><span class="zanN">&nbsp;12</span>&nbsp;
+						<img src="images/common/collect.png" class="shouA">
+						<span class="shouN">8</span>
+						<img src="images/common/share.png" class="pmShare">
+					</div>
+					
+                </div>
+				</div>	<!-- npm1 结束 -->
+				<div class="npm2">	<!-- npm2 开始 -->
+              	<div class="myPic clear">
+				<div class="myCon clear">
+					<div class="img1"></div>
+					
+					
+					<div class="men1">
+						<div class="writePic clear">
+							<a href="javascript:void(0)"><img src="images/common/aimg.gif"></a>
+						</div>
+
+						<div class="writeN clear">
+							<p>发布者</p>
+							<p class="writeName">Aaron</p>
+						</div><a href="javascript:void(0)">
+						<img src="images/common/procover.png" class="img2 clear"></a>
+						<div class="project clear">
+							<p>所属项目</p>
+							<p class="proName">英特尔品牌日</p>
+						</div>
+							
+					</div>
+					<img src="images/common/play.png" class="playVideo">
+                 </div>
+              	</div>
+                 
+                <div class="comment clear">
+					<input type="text" name="" value="活动海报" class="activeName">
+					
+					<hr style="size: 1;">
+					<div class="projectDescript">
+						<span>描述：</span><textarea clos="5" rows="3">描述...</textarea>
+					</div><hr style="size: 1;">
+					<div class="panel1" id="demo2">
+						<div class="_panel-box  panel-box2">
+							<div class="item otherItem clear">
+								<img src="images/common/aimg.gif" class="otherPhoto clear">
+								<div class="otherCon clear">
+									<p class="otherName clear">Olsen</p>
+									<span class="otherDis clear">请问这是哪？</span>
+								</div>
+							</div>
+					<!--	<div class="itemM"><img src="tu/1.jpg" class="clear"><p></p><span class="clear">addaddadd</span></div>	-->
+						</div>
+					</div>  <!-- panel1 结束 -->
+					<hr style="size: 1;">
+					<input type="text" name="" class="addCon addCon2" placeholder="添加评论给好友">
+					<input type="button" name="" value="添加评论" class="addBtn addBtn2">
+					<hr style="size: 1;">
+					<div class="pmActive">
+						<img src="images/common/zan.png" class="zanA"><span class="zanN">&nbsp;12</span>&nbsp;
+						<img src="images/common/collect.png" class="shouA">
+						<span class="shouN">8</span>
+						<img src="images/common/share.png" class="pmShare">
+					</div>
+					
+                </div>
+				</div>	<!-- npm2 结束 -->
+              </div>   <!-- con1 结束 -->
+              <div class="con2"> 
+             	 <div class="npm1">
+              	<div class="myPic clear">
+				<div class="myCon clear">
+					<div class="img1"></div>
+					
+					<div class="men1">
+						<div class="writePic clear">
+							<a href="javascript:void(0)"><img src="images/common/aimg.gif"></a>
+						</div>
+						<div class="writeN clear">
+							<p>发布者</p>
+							<p class="writeName">Aaron</p>
+						</div>
+						<a href="javascript:void(0)"><img src="images/common/procover.png" class="img2 clear"></a>
+						<div class="project clear">
+							<p>所属项目</p>
+							<p class="proName">英特尔品牌日</p>
+						</div>
+							
+					</div>
+                 </div>
+              	</div>
+                 
+                <div class="comment clear">
+					<input type="text" name="" value="活动海报" class="activeName">
+					<!-- 点击修改 -->
+					<img src="images/common/lock.png" class="deslock">
+					<hr style="size: 1;">
+					<div class="projectDescript">
+						<span>描述：</span><textarea clos="5" rows="3">描述...</textarea>
+					</div><hr style="size: 1;">
+					<div class="panel1" id="demo1">
+						<div class="_panel-box panel-box1">
+							<div class="item otherItem clear">
+								<img src="images/common/aimg.gif" class="otherPhoto clear">
+								<div class="otherCon clear">
+									<p class="otherName clear">Olsen</p>
+									<span class="otherDis clear">请问这是哪？</span>
+								</div>
+							</div>
+						</div>
+					</div>  <!-- panel1 结束 -->
+					<hr style="size: 1;">
+					<input type="text" name="" class="addCon addCon1" placeholder="添加评论给好友">
+					<input type="button" name="" value="添加评论" class="addBtn addBtn1">
+					<hr style="size: 1;">
+					<div class="pmActive">
+						<img src="images/common/zan.png" class="zanA"><span class="zanN">&nbsp;12</span>&nbsp;
+						<img src="images/common/collect.png" class="shouA">
+						<span class="shouN">8</span>
+						<img src="images/common/share.png" class="pmShare">
+					</div>
+					
+                </div>
+				</div>	<!-- npm1 结束 -->
+				<div class="npm2">	<!-- npm2 开始 -->
+              	<div class="myPic clear">
+				<div class="myCon clear">
+					<div class="img1"></div>
+					
+					
+					<div class="men1">
+						<div class="writePic clear">
+							<a href="javascript:void(0)"><img src="images/common/aimg.gif"></a>
+						</div>
+
+						<div class="writeN clear">
+							<p>发布者</p>
+							<p class="writeName">Aaron</p>
+						</div><a href="javascript:void(0)">
+						<img src="images/common/procover.png" class="img2 clear"></a>
+						<div class="project clear">
+							<p>所属项目</p>
+							<p class="proName">英特尔品牌日</p>
+						</div>
+							
+					</div>
+					<img src="images/common/play.png" class="playVideo">
+                 </div>
+              	</div>
+                 
+                <div class="comment clear">
+					<input type="text" name="" value="活动海报" class="activeName">
+					<!-- 点击修改 -->
+					<img src="images/common/lock.png" class="deslock">
+					<hr style="size: 1;">
+					<div class="projectDescript">
+						<span>描述：</span><textarea clos="5" rows="3">描述...</textarea>
+					</div><hr style="size: 1;">
+					<div class="panel1" id="demo2">
+						<div class="_panel-box  panel-box2">
+							<div class="item otherItem clear">
+								<img src="images/common/aimg.gif" class="otherPhoto clear">
+								<div class="otherCon clear">
+									<p class="otherName clear">Olsen</p>
+									<span class="otherDis clear">请问这是哪？</span>
+								</div>
+							</div>
+					<!--	<div class="itemM"><img src="tu/1.jpg" class="clear"><p></p><span class="clear">addaddadd</span></div>	-->
+						</div>
+					</div>  <!-- panel1 结束 -->
+					<hr style="size: 1;">
+					<input type="text" name="" class="addCon addCon2" placeholder="添加评论给好友">
+					<input type="button" name="" value="添加评论" class="addBtn addBtn2">
+					<hr style="size: 1;">
+					<div class="pmActive">
+						<img src="images/common/zan.png" class="zanA"><span class="zanN">&nbsp;12</span>&nbsp;
+						<img src="images/common/collect.png" class="shouA">
+						<span class="shouN">8</span>
+						<img src="images/common/share.png" class="pmShare">
+					</div>
+					
+                </div>
+				</div>	<!-- npm2 结束 -->
+              </div>	<!-- con2 结束 -->
+
+          </div>	<!-- myContent 结束 -->
+           
+    </div>  <!-- 列表显示结束  myList-->
+
+</div>	<!-- pmwrap 结束 -->
+</div>	<!-- mp-pusher mp-pusher 结束-->
+</div>  <!-- 最外层  containerWrap-->
+<footer> 
+    <img src="images/common/logo.png" class="footerLogo">
+    <span class="about">关于我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="about">联系我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><img src="images/common/w.png"></span>
+</footer>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/personmanage.js"></script>
+<script type="text/javascript" src="scripts/scroll.js"></script>
+<script type="text/javascript" src="scripts/component.js"></script>
+<script type="text/javascript">
+new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+</script>
+</html>

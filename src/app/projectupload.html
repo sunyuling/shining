@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>项目上传</title>
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  	<link rel="stylesheet" type="text/css" href="styles/component.css">
+	<link rel="stylesheet" type="text/css" href="styles/proupload.css">
+	
+</head>
+<body>
+<div class="containerWrap">
+<div class="mp-pusher" id="mp-pusher">
+<div class="sidebar mp-menu" id="mp-menu">
+  <div class="mp-level"><br><br>
+      <h2 class="icon icon-world">Aragaki</h2><br>
+      <hr >
+      <ul>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMfp.png">&nbsp;&nbsp;我关注的人</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftfm.png">&nbsp;&nbsp;关注我的人</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMfocus.png">&nbsp;&nbsp;我关注的项目</a></li><hr >
+          <li class="icon left-list"><a href="#"><img src="images/common/leftmpage.png">&nbsp;&nbsp;个人主页</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/propartner.png">&nbsp;&nbsp;项目伙伴</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMpro.png">&nbsp;&nbsp;我的项目</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftcollect.png">&nbsp;&nbsp;我的收藏</a></li>
+      </ul>
+  </div>  <!-- mp-level 结束 -->
+</div>  <!-- mp-menu  nav 结束 -->
+<!-- 新增 结束 -->
+<!-- pmwrap 开始 -->
+<div class="pmwrap scroll indexWrap"> 
+	    <!-- 新增 -->
+    <div class="scroller-inner">
+        <div class="content clearfix">
+            <div class="block clearfix">
+              <p><a href="#" id="trigger" class="menu-trigger"><img src="images/common/leftBtn.png"></a></p>
+            </div>
+        </div>
+    </div>  <!-- /scroller-inner -->
+    <!-- 新增 结束 -->
+
+	<!-- pmheader 开始 -->
+	<div class="pmheader">
+		<!-- pmnav 开始 -->
+		<div class="pmnav">
+			<a href="index.html"><img src="images/common/shining.png" class="shining"></a>
+			<div class="topSeek">
+				<input type="text" name="" placeholder="搜索" class="navSeek">
+				<div class="pmSeek"><img src="images/common/maxglass.png"></div>
+			</div>
+			
+			<a href="javascript:void(0)"><img src="images/common/publish.png" class="addPro"></a>
+            <a href="javascript:void(0)"><img src="images/common/allPro.png" class="allPro"></a>
+			<a href="#"><img src="images/common/massage.png" class="pmMass">
+			<img src="images/common/blue.png" class="pmBlue"></a>
+			<p class="pmName">Aragaki</p>
+			<a href=""><img src="images/common/aimg.gif" class="pmPhoto"></a>
+		</div>	<!-- pmnav 结束 -->
+		<!-- 新增 项目列表 -->
+      <div class="projectList">
+        <p><a href="#">我的项目</a></p>
+        <p><a href="#">新建项目</a></p>
+        <p><a href="#">更新项目</a></p>
+      </div>
+      <!-- 结束新增 项目列表 -->
+	
+	</div>	<!-- pmheader 结束-->
+	<!-- newProject 开始-->
+	<div class="newProject">
+	<!-- project picture 开始-->
+	<div class="projectPic clear">
+		<!--input-group start-->
+        <div class="input-group row">
+          
+            <div class="col-sm-9 big-photo">
+                <div id="preview">
+                    <img id="imghead" src="images/common/upload.png" width="90" height="90" onclick="$('#previewImg').click();">
+                </div>         
+            	<input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
+                	<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">
+            </div>
+        </div>
+        <!--input-group end-->
+	</div>
+	<!-- project picture 结束-->
+	<div class="projectMess clear">
+		<div class="clear inpLeft"><p class="clear">项目名称</p>&nbsp;<input type="text" name="" value=""></div>
+		<div class="clear inpLeft"><p class="clear">项目职责</p>&nbsp;<input type="text" name="" value=""></div>	
+		<div class="clear inpLeft"><p class="clear">项目介绍</p>&nbsp;<textarea cols="30" rows="5"></textarea></div>
+	</div>
+	</div>
+	<!-- newProject 结束-->
+
+	<div class="uploadBtn">
+		<div><img src="images/common/addPic.png"></div>
+		<div><img src="images/common/shareVideo.png"></div>
+		<div><img src="images/common/addWord.png"></div>
+	</div>
+	<div class=""></div>
+	<div class="previewPublish">
+		<div class="previewBtn">预览</div>
+		<div class="previewBtn">发布</div>
+	</div>
+</div>	<!-- pmwrap 结束 -->
+</div>	<!-- class="mp-pusher" id="mp-pusher" 结束-->
+</div>	<!-- containerWrap 结束-->
+
+<footer> 
+    <img src="images/common/logo.png" class="footerLogo">
+    <span class="about">关于我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="about">联系我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><img src="images/common/w.png"></span>
+</footer>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="scripts/scroll.js"></script>
+<script type="text/javascript" src="scripts/component.js"></script>
+<script type="text/javascript" src="scripts/projectupload.js"></script>
+<script type="text/javascript">
+new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+
+//图片上传预览    IE是用了滤镜。
+        function previewImage(file){
+          var MAXWidth  = 170; 
+          var MAXHeight = 200;
+          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+              var img = document.getElementById('imghead');
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWidth, MAXHeight, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+      };
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        };
+</script>
+</html>

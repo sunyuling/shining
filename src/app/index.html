@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <!-- 新增标签 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- 结束 -->
+  <title>首页</title>
+ 
+
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+ 
+  <!-- 新增标签 -->
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/component.css">
+  <!-- 结束 -->
+</head>
+<body>
+<!-- 每个项目图片 添加a标签 添加点击事件 点击进入项目页 -->
+<!-- 每个项目负责人头像 添加a标签，点击出现详情信息，再次点击进入个人展示 -->
+<!-- 新增 -->
+<div class="containerWrap">
+<div class="mp-pusher" id="mp-pusher">
+<div class="sidebar mp-menu" id="mp-menu">
+  <div class="mp-level"><br><br>
+      <h2 class="icon icon-world">Aragaki</h2><br>
+      <hr >
+      <ul>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMfp.png">&nbsp;&nbsp;我关注的人</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftfm.png">&nbsp;&nbsp;关注我的人</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMfocus.png">&nbsp;&nbsp;我关注的项目</a></li><hr >
+          <li class="icon left-list"><a href="#"><img src="images/common/leftmpage.png">&nbsp;&nbsp;个人主页</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/propartner.png">&nbsp;&nbsp;项目伙伴</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftMpro.png">&nbsp;&nbsp;我的项目</a></li>
+          <li class="icon left-list"><a href="#"><img src="images/common/leftcollect.png">&nbsp;&nbsp;我的收藏</a></li>
+      </ul>
+  </div>  <!-- mp-level 结束 -->
+</div>  <!-- mp-menu  nav 结束 -->
+<!-- 新增 结束 -->
+<div class="indexWrap scroll"> <!-- 新增 scroll 标签 -->
+    <!-- 新增 -->
+    <div class="scroller-inner">
+        <div class="content clearfix">
+            <div class="block clearfix">
+              <p><a href="#" id="trigger" class="menu-trigger"><img src="images/common/leftBtn.png"></a></p>
+            </div>
+        </div>
+    </div>  <!-- /scroller-inner -->
+    <!-- 新增 结束 -->
+    <!-- 新增 轮播图删掉 -->
+
+      <img src="images/common/top.gif" class="topLoop">
+  
+    <!-- 结束 轮播图的闭合标签 -->
+    <div class="topText">   <!-- 图上文字 -->
+      <div class="header"> 
+
+
+      <!-- 新增 添加点击事件  点击返回主页 -->
+        <a href="index.html"><img src="images/common/shining.png" class="topLogo"></a>
+      <!-- 添加事件结束 -->
+
+
+          <div class="loginDiv clear">
+             <a href="javascript:void(0)"><img src="images/common/publish.png" class="addPro"></a>
+             <a href="javascript:void(0)"><img src="images/common/allPro.png" class="allPro"></a>
+             <a href="javascript:void(0)"><img src="images/common/messagePro.png" class="message">
+            <!-- 添加小蓝点 --><img src="images/common/blue.png" id="blue">
+             </a>
+             <span id="loginLogo" class="clear">登录</span>
+             <div class="topNlogin clear">
+                  <a href="personmanage.html"><img src="images/common/peopel.png" class="people"></a>
+             </div>
+          </div>
+      </div>
+      <!-- 新增 项目列表 -->
+      <div class="projectList">
+        <p><a href="#">我的项目</a></p>
+        <p><a href="projectupload.html">新建项目</a></p>
+        <p><a href="#">更新项目</a></p>
+      </div>
+      <!-- 结束新增 项目列表 -->
+      <div class="topIntroduce">
+        <p>项目工作。。。</p>
+        <p>项目qqqqqq</p>
+        <div class="topSeek">
+            <input id="checkSeek" type="text"/>
+            <div class="seekBtn"><img src="images/common/ali.png"></div>
+        </div>
+        <div class="hotSeek">
+            <span>热门搜索：</span><span>壁纸那些事，</span><span>壁纸那些事，</span><span>壁纸那些事</span>
+        </div><br>
+        <div class="join">
+        	 <button class="btn btn-default" style="display:block; cursor:pointer">加入我们</button>
+        </div>
+       
+      </div>
+      
+    </div>  <!-- 图上文字 -->
+    <br><br>
+    <div class="textExplain" id="textExplain">
+    <div class="textSite">
+      <div class="textBig clear">
+      <div class="textImg"><img src="images/common/s1.gif" alt=""></div>
+      <p class="textMax">我们能做什么</p>
+      <p class="textMin">我们能做什么</p class="textMin">
+      <p class="textMin">我们能做什么qqqqq</p class="textMin">
+      <p class="textMin">我们能做什么</p class="textMin">
+      </div>
+      <div class="textBig clear">
+      <div class="textImg"><img src="images/common/g1.gif" alt=""></div>
+      <p class="textMax">为什么用我们</p>
+      <p class="textMin">我们能做什么</p class="textMin">
+      <p class="textMin">我们能做什么qqqqq</p class="textMin">
+      <p class="textMin">我们能做什么</p class="textMin">
+      </div>
+      <div class="textBig clear">
+      <div class="textImg"><img src="images/common/b1.gif" alt=""></div>
+      <p class="textMax">什么人在使用</p>
+      <p class="textMin">我们能做什么</p class="textMin">
+      <p class="textMin">我们能做什么qqqqq</p class="textMin">
+      <p class="textMin">我们能做什么</p class="textMin">
+      </div>
+    </div>
+      
+    </div>   <!-- textExplain 结束 -->
+<br>
+ 	<div id="textContent">
+  <!-- 添加 一层div -->
+    <div class="bigContentbox" id="bigContentbox">
+    <ul class="contentbox"> 
+    <!-- 添加了一个 ID = “con” -->
+
+      <li class="con clear" id="con"> 
+        <!-- 添加一个 div 包裹 背景图 -->
+          <a href="projectShow.html"><div class="proImg"></div></a>
+        <!-- 添加包裹背景图结束 -->
+          <h4>英特尔品牌日</h4>
+          <p>hahahahh</p>
+          <div class="author"> 
+             <div class="authorMsg clear"> 
+                <img src="images/common/aimg.gif" class="authorImg">
+                <p class="authorName">Annie</p>
+             </div>
+             <div class="partner clear"> 
+                <p class="partner1 clear">项目还有其他<span class="countPP">5</span>位参与者</p>
+                
+                <p class="interact"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/like.png" class="like">&nbsp;<span class="likeNum">4</span>&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/zan.png" class="zan">&nbsp;<span class="zanNum">12</span>
+                </p>
+             </div>
+          </div><span class="countP">查看</span>
+ 
+        <div class="txt">  <!-- 项目参与人信息 -->
+          <div class="friends">
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+        </div>
+        </div>   <!-- 项目参与人信息 结束 -->
+        <div class="writeCon">
+          <a href="#"><img src="images/common/aimg.gif" class="writeImg"></a>
+          <p>Annie</p>
+
+          <div class="proHot"> <!-- proHot 开始 -->
+            <div class="proNum clear">
+              <img src="images/common/13.png">
+              <p>22</p>
+              <p class="big">上传项目</p>
+              <p></p>
+            </div>
+            <div class="proPeo clear">
+              <img src="images/common/14.png">
+              <p>72</p>
+              <p class="big">关注者</p>
+              <p></p>
+            </div>
+          </div>  <!-- proHot 结束 -->
+
+          <div class="writeMess"> <!-- 项目人详细信息 -->
+            <div><p class="p1 clear">地点</p>&nbsp;&nbsp;<p class="p2 clear">北京</p></div>
+            <div><p class="p1 clear">职业</p>&nbsp;&nbsp;<p class="p2 clear">UI设计师</p></div>
+            <div><p class="p1 clear">技能</p>&nbsp;&nbsp;<p class="p2 clear">Photoshop、Indesign、IIIuatrator</p></div>
+            <div><p class="p1 clear">简介</p>&nbsp;&nbsp;<p class="p3 clear">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p></div>
+          </div>  <!-- 项目人详细信息 结束 -->
+        </div>
+      </li>
+      <li class="con clear" id="con"> 
+        
+          <a href="#"><div class="proImg"></div></a>
+          <h4>英特尔品牌日</h4>
+          <p>hahahahh</p>
+          <div class="author"> 
+             <div class="authorMsg clear"> 
+                <img src="images/common/aimg.gif" class="authorImg">
+                <p class="authorName">Annie</p>
+             </div>
+             <div class="partner clear"> 
+                <p class="partner1 clear">项目还有其他<span class="countPP">5</span>位参与者</p>
+                
+                <p class="interact"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/like.png" class="like">&nbsp;<span class="likeNum">4</span>&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/zan.png" class="zan">&nbsp;<span class="zanNum">12</span>
+                </p>
+             </div>
+          </div><span class="countP">查看</span>
+ 
+        <div class="txt">  <!-- 项目参与人信息 -->
+          <div class="friends">
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+        </div>
+        </div>   <!-- 项目参与人信息 结束 -->
+        <div class="writeCon">
+          <a href="#"><img src="images/common/aimg.gif" class="writeImg"></a>
+          <p>Annie</p>
+
+          <div class="proHot"> <!-- proHot 开始 -->
+            <div class="proNum clear">
+              <img src="images/common/13.png">
+              <p>22</p>
+              <p class="big">上传项目</p>
+              <p></p>
+            </div>
+            <div class="proPeo clear">
+              <img src="images/common/14.png">
+              <p>72</p>
+              <p class="big">关注者</p>
+              <p></p>
+            </div>
+          </div>  <!-- proHot 结束 -->
+
+          <div class="writeMess"> <!-- 项目人详细信息 -->
+            <div><p class="p1 clear">地点</p>&nbsp;&nbsp;<p class="p2 clear">北京</p></div>
+            <div><p class="p1 clear">职业</p>&nbsp;&nbsp;<p class="p2 clear">UI设计师</p></div>
+            <div><p class="p1 clear">技能</p>&nbsp;&nbsp;<p class="p2 clear">Photoshop、Indesign、IIIuatrator</p></div>
+            <div><p class="p1 clear">简介</p>&nbsp;&nbsp;<p class="p3 clear">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p></div>
+          </div>  <!-- 项目人详细信息 结束 -->
+        </div>
+      </li>
+      <li class="con clear" id="con"> 
+        
+          <a href="#"><div class="proImg"></div></a>
+          <h4>英特尔品牌日</h4>
+          <p>hahahahh</p>
+          <div class="author"> 
+             <div class="authorMsg clear"> 
+                <img src="images/common/aimg.gif" class="authorImg">
+                <p class="authorName">Annie</p>
+             </div>
+             <div class="partner clear"> 
+                <p class="partner1 clear">项目还有其他<span class="countPP">5</span>位参与者</p>
+                
+                <p class="interact"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/like.png" class="like">&nbsp;<span class="likeNum">4</span>&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/zan.png" class="zan">&nbsp;<span class="zanNum">12</span>
+                </p>
+             </div>
+          </div><span class="countP">查看</span>
+ 
+        <div class="txt">  <!-- 项目参与人信息 -->
+          <div class="friends">
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+        </div>
+        </div>   <!-- 项目参与人信息 结束 -->
+        <div class="writeCon">
+          <a href="#"><img src="images/common/aimg.gif" class="writeImg"></a>
+          <p>Annie</p>
+
+          <div class="proHot"> <!-- proHot 开始 -->
+            <div class="proNum clear">
+              <img src="images/common/13.png">
+              <p>22</p>
+              <p class="big">上传项目</p>
+              <p></p>
+            </div>
+            <div class="proPeo clear">
+              <img src="images/common/14.png">
+              <p>72</p>
+              <p class="big">关注者</p>
+              <p></p>
+            </div>
+          </div>  <!-- proHot 结束 -->
+
+          <div class="writeMess"> <!-- 项目人详细信息 -->
+            <div><p class="p1 clear">地点</p>&nbsp;&nbsp;<p class="p2 clear">北京</p></div>
+            <div><p class="p1 clear">职业</p>&nbsp;&nbsp;<p class="p2 clear">UI设计师</p></div>
+            <div><p class="p1 clear">技能</p>&nbsp;&nbsp;<p class="p2 clear">Photoshop、Indesign、IIIuatrator</p></div>
+            <div><p class="p1 clear">简介</p>&nbsp;&nbsp;<p class="p3 clear">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p></div>
+          </div>  <!-- 项目人详细信息 结束 -->
+        </div>
+      </li>
+      <li class="con clear" id="con"> 
+        
+          <a href="#"><div class="proImg"></div></a>
+          <h4>英特尔品牌日</h4>
+          <p>hahahahh</p>
+          <div class="author"> 
+             <div class="authorMsg clear"> 
+                <img src="images/common/aimg.gif" class="authorImg">
+                <p class="authorName">Annie</p>
+             </div>
+             <div class="partner clear"> 
+                <p class="partner1 clear">项目还有其他<span class="countPP">5</span>位参与者</p>
+                
+                <p class="interact"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/like.png" class="like">&nbsp;<span class="likeNum">4</span>&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/zan.png" class="zan">&nbsp;<span class="zanNum">12</span>
+                </p>
+             </div>
+          </div><span class="countP">查看</span>
+ 
+        <div class="txt">  <!-- 项目参与人信息 -->
+          <div class="friends">
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+        </div>
+        </div>   <!-- 项目参与人信息 结束 -->
+        <div class="writeCon">
+          <a href="#"><img src="images/common/aimg.gif" class="writeImg"></a>
+          <p>Annie</p>
+
+          <div class="proHot"> <!-- proHot 开始 -->
+            <div class="proNum clear">
+              <img src="images/common/13.png">
+              <p>22</p>
+              <p class="big">上传项目</p>
+              <p></p>
+            </div>
+            <div class="proPeo clear">
+              <img src="images/common/14.png">
+              <p>72</p>
+              <p class="big">关注者</p>
+              <p></p>
+            </div>
+          </div>  <!-- proHot 结束 -->
+
+          <div class="writeMess"> <!-- 项目人详细信息 -->
+            <div><p class="p1 clear">地点</p>&nbsp;&nbsp;<p class="p2 clear">北京</p></div>
+            <div><p class="p1 clear">职业</p>&nbsp;&nbsp;<p class="p2 clear">UI设计师</p></div>
+            <div><p class="p1 clear">技能</p>&nbsp;&nbsp;<p class="p2 clear">Photoshop、Indesign、IIIuatrator</p></div>
+            <div><p class="p1 clear">简介</p>&nbsp;&nbsp;<p class="p3 clear">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p></div>
+          </div>  <!-- 项目人详细信息 结束 -->
+        </div>
+      </li>
+      <li class="con clear" id="con"> 
+        
+          <a href="#"><div class="proImg"></div></a>
+          <h4>英特尔品牌日</h4>
+          <p>hahahahh</p>
+          <div class="author"> 
+             <div class="authorMsg clear"> 
+                <img src="images/common/aimg.gif" class="authorImg">
+                <p class="authorName">Annie</p>
+             </div>
+             <div class="partner clear"> 
+                <p class="partner1 clear">项目还有其他<span class="countPP">5</span>位参与者</p>
+                
+                <p class="interact"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/like.png" class="like">&nbsp;<span class="likeNum">4</span>&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/zan.png" class="zan">&nbsp;<span class="zanNum">12</span>
+                </p>
+             </div>
+          </div><span class="countP">查看</span>
+ 
+        <div class="txt">  <!-- 项目参与人信息 -->
+          <div class="friends">
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+        </div>
+        </div>   <!-- 项目参与人信息 结束 -->
+        <div class="writeCon">
+          <a href="#"><img src="images/common/aimg.gif" class="writeImg"></a>
+          <p>Annie</p>
+
+          <div class="proHot"> <!-- proHot 开始 -->
+            <div class="proNum clear">
+              <img src="images/common/13.png">
+              <p>22</p>
+              <p class="big">上传项目</p>
+              <p></p>
+            </div>
+            <div class="proPeo clear">
+              <img src="images/common/14.png">
+              <p>72</p>
+              <p class="big">关注者</p>
+              <p></p>
+            </div>
+          </div>  <!-- proHot 结束 -->
+
+          <div class="writeMess"> <!-- 项目人详细信息 -->
+            <div><p class="p1 clear">地点</p>&nbsp;&nbsp;<p class="p2 clear">北京</p></div>
+            <div><p class="p1 clear">职业</p>&nbsp;&nbsp;<p class="p2 clear">UI设计师</p></div>
+            <div><p class="p1 clear">技能</p>&nbsp;&nbsp;<p class="p2 clear">Photoshop、Indesign、IIIuatrator</p></div>
+            <div><p class="p1 clear">简介</p>&nbsp;&nbsp;<p class="p3 clear">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p></div>
+          </div>  <!-- 项目人详细信息 结束 -->
+        </div>
+      </li>
+      <li class="con clear" id="con"> 
+        
+         <a href="#"><div class="proImg"></div></a>
+          <h4>英特尔品牌日</h4>
+          <p>hahahahh</p>
+          <div class="author"> 
+             <div class="authorMsg clear"> 
+                <img src="images/common/aimg.gif" class="authorImg">
+                <p class="authorName">Annie</p>
+             </div>
+             <div class="partner clear"> 
+                <p class="partner1 clear">项目还有其他<span class="countPP">5</span>位参与者</p>
+                
+                <p class="interact"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/like.png" class="like">&nbsp;<span class="likeNum">4</span>&nbsp;&nbsp;&nbsp;
+                    <img src="images/common/zan.png" class="zan">&nbsp;<span class="zanNum">12</span>
+                </p>
+             </div>
+          </div><span class="countP">查看</span>
+ 
+        <div class="txt">  <!-- 项目参与人信息 -->
+          <div class="friends">
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+            <div class="part"><img src="images/common/aimg.gif"> 
+            <p>Annie</p><p>3D设计师</p>
+            </div>
+        </div>
+        </div>   <!-- 项目参与人信息 结束 -->
+        <div class="writeCon">
+          <a href="#"><img src="images/common/aimg.gif" class="writeImg"></a>
+          <p>Annie</p>
+
+          <div class="proHot"> <!-- proHot 开始 -->
+            <div class="proNum clear">
+              <img src="images/common/13.png">
+              <p>22</p>
+              <p class="big">上传项目</p>
+              <p></p>
+            </div>
+            <div class="proPeo clear">
+              <img src="images/common/14.png">
+              <p>72</p>
+              <p class="big">关注者</p>
+              <p></p>
+            </div>
+          </div>  <!-- proHot 结束 -->
+
+          <div class="writeMess"> <!-- 项目人详细信息 -->
+            <div><p class="p1 clear">地点</p>&nbsp;&nbsp;<p class="p2 clear">北京</p></div>
+            <div><p class="p1 clear">职业</p>&nbsp;&nbsp;<p class="p2 clear">UI设计师</p></div>
+            <div><p class="p1 clear">技能</p>&nbsp;&nbsp;<p class="p2 clear">Photoshop、Indesign、IIIuatrator</p></div>
+            <div><p class="p1 clear">简介</p>&nbsp;&nbsp;<p class="p3 clear">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p></div>
+          </div>  <!-- 项目人详细信息 结束 -->
+        </div>
+      </li>
+      
+
+    </ul>
+    <!-- 添加 一层div的结束标签 -->
+	 </div>
+
+ 	</div>
+  
+  </div>   <!-- indexWrap 结束	 -->
+
+<!-- 新增 -->
+</div> <!-- class="mp-pusher" id="mp-pusher" 结束 -->
+</div>
+<!-- 新增结束 -->
+
+  <!-- 登录窗口 -->
+       <div id="popWindow" style="display:none;"></div>
+       <div id="login" class="login">
+          <div class="loginTab">
+          <div id="login1" class="btnColor clear">账户登录</div>
+          <div id="login2" class="clear">扫码登录</div>
+          </div>
+          <div id="loginDivs">
+              <div id="loginDiv1"> 
+                 
+                    <div class="form-group">
+                      
+                      <input type="text" class="form-control phoneNumber" placeholder="用户名" >
+                     
+                      <input type="text" class="form-control phoneYan" placeholder="密码">
+                      
+                <div class="pwdYN"><input name="rember" type="radio" value="" id="rember"/><span class="remberPas">记住密码</span>  </div> 
+                <span class="forgetPas">忘记密码？</span>
+                    </div>
+                    <div class="loginYN"> 
+                      <button type="button" class="btn btn-default loginBtnClick">登录</button><br> <p class="checkBtn">没有账号？立即<span class="regisGo">注册</span></p>
+                    </div>                 
+                  
+                
+                 
+              </div>
+              <div id="loginDiv2"> 
+              <div  class="imgRegis"><img src="images/common/4.png" id="weiboLog"><img src="images/common/5.png" id="wecharLog"></div>
+              
+              <p class="checkBtn">没有账号？立即<span class="regisGo">注册</span></p>
+              </div>
+
+          </div>
+           <img src="images/common/close.png" class="closeBtn">
+      </div> 
+
+
+
+      </div> 
+      <!--注册窗口-->
+       <div id="popWindow" style="display:none;"></div>
+       <div id="regis" class="regis" style="display:none;">
+          <div class="regisTab">
+          <div id="regis1" class="btnColor clear">注册</div>
+          <div id="regis2" class="clear">快捷登录</div>
+          </div>
+          <div id="regisDivs">
+              <div id="regisDiv1"> 
+                 
+                    <div class="form-group">
+                      
+                      <input type="text" class="form-control phoneNumber" placeholder="手机号码" >
+                      <div class="txt" id="phoneReg"><img src="images/common/false.png" id="errorImg"/></div>
+                      <input type="text" class="form-control phoneYan" placeholder="验证码">
+                      
+                      <input type="button" id="btnSendCode" value="获取验证码">
+                      
+
+                    </div>
+                                     
+                   <button type="button" class="btn btn-default nextBtnClick">下一步</button> <p class="checkBtn">已有账号？立即<span class="haveLogin">登录</span></p>
+                
+                 
+              </div>
+              <div id="regisDiv2"> 
+              <div class="imgRegis"><img src="images/common/4.png" id="weibo"> <img src="images/common/5.png" id="wechar">
+              </div>
+            
+              <p class="checkBtn">已有账号？立即<span class="haveLogin">登录</span></p>
+              </div>
+
+          </div>
+           <img src="images/common/close.png" class="closeBtn">
+      </div> 
+    <div class="userMsg"> 
+      <div class="userNP"> 
+        <p>注册</p>
+        <div class="form-group">
+          <input type="text" class="userName" placeholder="用户名" ><div class="hr"></div>
+          <input type="password" class="userPwd" placeholder="密码"><div class="hr"></div>
+          <input type="password" class="userPwd" placeholder="重新输入密码"><br>           
+        </div>
+      </div>
+      <div class="userTel"> 
+        <div class="userJs">职业：&nbsp;&nbsp; <input type="text" class="userName" placeholder="平面设计师" ></div><div class="hrBlack"></div>
+        <div class="userJs">技能： &nbsp;&nbsp;<input type="password" class="userPwd" placeholder="Photoshop"></div><div class="hrBlack"></div>
+        <div class="userX"><span class="spanLabel clear">兴趣：</span> 
+            <div class="inpCheck clear"> 
+                <label><input name="Fruit" type="checkbox" value="" /><span>登山</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>骑行</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>美女</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>绘画</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>影视</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>旅游</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>潜水</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>游戏</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>登山</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>骑行</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+                <label><input name="Fruit" type="checkbox" value="" /><span>苹果</span></label>&nbsp; 
+            </div>
+           
+        </div> <div class="hrBlack"></div><br>
+        <button type="button" class="successBtn">完成</button>
+        <img src="images/common/close.png" class="closeBtn">
+      </div>
+
+    </div>
+    <footer> 
+    <img src="images/common/logo.png" class="footerLogo">
+    <span class="about">关于我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="about">联系我们</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><img src="images/common/w.png"></span>
+    </footer>
+
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/swiper.min.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+<script type="text/javascript" src="scripts/component.js"></script>
+<script type="text/javascript">
+new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+</script>
+</html>

@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+}
+.clear::after{
+	clear: both;
+	display: block;
+	content:"";
+}
+ul li{
+	list-style: none;
+}
+.pmwrap{
+	width: 100%;
+	.pmheader{
+		width: 100%;
+		.pmnav{
+			width: 100%;
+			height:45px;
+			background: #2d3846;
+			line-height: 45px;
+			position: relative;
+			top: 0;
+			z-index: 5;
+			a{
+				.shining{
+					height: 30px;
+					display: inline-block;
+					position: absolute;
+					top: 10px;
+					margin-left: 20%;
+				}	
+			}
+			.topSeek{
+				height: 45px;width: 25%;
+				position: relative;
+				top: 0px;
+				display: inline-block;
+				margin-left: 35%;
+			.navSeek{
+					border: 1px solid #ccc;
+					background: rgba(255,255,255,0.1);
+					width: 100%;
+					position: absolute;
+					
+					bottom: 10px;
+					padding: 3px 3px;
+					
+				}
+				.pmSeek{
+					position: absolute;
+					top: 0px;
+					right: 5px;
+					img{
+						height: 16px;
+					}	
+				}	/* pmSeek 结束 */
+			
+			}	/* topSeek 结束 */
+			.addPro{
+				margin-left: 5%;
+				margin-bottom: 10px;
+			}
+			.allPro{
+				margin-left: 1%;
+				margin-bottom: 10px;
+			}
+			.pmMass{
+				margin-left: 1%;
+				margin-bottom: 10px;
+			}
+			.pmBlue{
+				margin-left: -0.5%;
+				margin-bottom: 25px;
+			}
+			.pmName{
+				color: white;
+				font-weight: 100;
+				font-size: 20px;
+				display: inline-block;
+				position: absolute;
+				top: 2px;
+				margin-left: 1%;
+			}
+			.pmPhoto{
+				width: 35px;
+				margin-left: 100px;
+				margin-bottom: 2px;
+				border:2px solid #bbb;
+				border-radius: 50%;
+			}
+		}	/*pmnav 结束*/
+		.projectList p{
+			margin: 0 0 10px;
+		}
+	}	/*proheader 结束*/
+	.newProject{
+		width: 100%;
+		height: 400px;
+		padding-top: 100px;
+		background-color: #f2f2f2;
+		.projectPic{
+			width: 200px;
+			height: 250px;
+			margin-left:15%;
+			float: left;
+			.input-group{
+				height: 100%;
+				.big-photo{
+					height: 100%;
+				}
+				#preview{
+					height: 100%;
+					#imghead{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+		.deletPro{
+			position: absolute;top: 70px;
+			right: 20%;
+			height: 30px;width: 130px;
+			border:1px solid black;
+			background-color: #eee;
+			text-align: center;
+			line-height: 30px;
+			font-size: 12px;
+			border-radius: 5px;
+		}
+		.projectMess{
+			float: left;
+			width: 550px;
+			height: 300px;
+			margin-left: 100px;
+	
+			p{
+				width: 80px;
+				float: left;
+				color: #bbb;
+			}
+			.inpTop{
+				width: 100%;
+				height: 25px;
+				vertical-align: bottom;
+				margin-bottom: 10px;
+
+				input{
+					border:0;
+					font-size: 20px;
+					color: #333;
+					background-color: #f2f2f2;
+				}
+				p{
+					margin-top: 4px;
+				}
+				textarea{
+					border: 0;
+					font-size: 16px;
+					padding-top: 3px;
+					color: #333;
+					background-color: #f2f2f2;
+				}
+			}
+			.inpLeft{
+				width: 50%;
+				height: 20px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				float: left;
+				input{
+					font-size: 16px;
+					border:0;
+					color: #333;
+					background-color: #f2f2f2;
+				}	
+				
+			}
+		}
+	}  /*newProject 结束*/
+
+
+}	/*pmwrap 结束*/
+
+
+footer{
+	height:60px;
+	background: #333;
+	line-height:60px;
+	padding-left:20%;
+
+	.footerLogo{
+		width:10%;
+
+		margin-right:40%;
+		/*margin-top: 15px;*/
+	}
+	.about{
+		color:#8f8f8f;
+	}
+	img{
+		vertical-align:middle;
+	}
+}
+
