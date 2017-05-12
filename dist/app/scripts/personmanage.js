@@ -22,16 +22,16 @@ $(function(){
 		$(".con2").css("display","none");
 		$(".my1").css("color","#00a0ff");
 		$(".my1").css("border-bottom","2px solid #00a0e9");
-		$(".my2").css("color","#000");
-		$(".my2").css("border","0px");
+		$(".my2").css("color","#959595");
+		$(".my2").css("border-bottom","2px solid #e0e0e0");
 	})
 	$(".my2").click(function(){
 		$(".con2").css("display","block");
 		$(".con1").css("display","none");
 		$(".my2").css("color","#00a0ff");
 		$(".my2").css("border-bottom","2px solid #00a0e9");
-		$(".my1").css("color","#000");
-		$(".my1").css("border","0px");
+		$(".my1").css("color","#959595");
+		$(".my1").css("border-bottom","2px solid #e0e0e0");
 	})
 
 	$(".slide").click(function(){

@@ -177,10 +177,8 @@ $(function(){
 	});
 	$(".authorImg").click(function(e){
 		$(this).parent().parent().siblings(".writeCon").show();
-		$(this).parent().parent().siblings(".countP").hide();
 		$(document).one("click",function(){
 			$(".writeCon").hide();
-			$(".countP").show();
 		});
 		e.stopPropagation();
 	});

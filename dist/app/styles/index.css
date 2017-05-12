@@ -371,23 +371,18 @@
 .indexWrap {
   width: 100%;
   position: relative;
+  /* 新   轮播图 属性删除*/
+  /*.swiper-container{z-index: 0;height:100%;}
+		img{width: 100%;height:100%;} } */
   /*topLoop 闭合标签   轮播图*/
   /*图片上文字  topText*/
   /* textExplain 结束 */
   /* textContent 结束  */
 }
 .indexWrap .topLoop {
-  width: 100%;
   position: relative;
+  width: 1920px;
   height: 350px;
-}
-.indexWrap .topLoop .swiper-container {
-  z-index: 0;
-  height: 100%;
-}
-.indexWrap .topLoop img {
-  width: 100%;
-  height: 100%;
 }
 .indexWrap .topText {
   width: 100%;
@@ -539,25 +534,23 @@
 }
 .indexWrap #textContent {
   width: 100%;
-  margin-left: auto;margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
-  position: relative;
-  padding-bottom:50px;
-  overflow: hidden;
   /* ul 结束  */
 }
-.indexWrap #textContent ul {
+.indexWrap #textContent .bigContentbox {
   margin: 46px auto 0;
   max-width: 1546px;
   padding-bottom: 115px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 .indexWrap #textContent ul .con {
   width: 280px;
-  height:450px;
-  float:left;
-  position:relative;
-  cursor:pointer;
+  height: 450px;
+  float: left;
+  position: relative;
+  cursor: pointer;
   margin: 0 22px 22px 0;
   border-radius: 4px;
   /* 项目参与人 结束*/
@@ -733,7 +726,6 @@
   position: relative;
   top: -50px;
   left: 10px;
-  z-index: 10;
 }
 /*indexWrap 的div 闭合*/
 footer {
@@ -750,30 +742,27 @@ footer .footerLogo {
 footer .about {
   color: #8f8f8f;
 }
-
- @media screen and (max-width: 1920px){
-     #bigContentbox{
-      width: 1546px;
-      margin: 0 auto;
-     }   
+@media screen and (max-width: 1920px) {
+  #bigContentbox {
+    width: 1546px;
+    margin: 0 auto;
+  }
 }
- @media screen and (max-width: 1637px){
-     #bigContentbox{
-      width: 1210px;
-      margin: 0 auto;
-     }   
+@media screen and (max-width: 1637px) {
+  #bigContentbox {
+    width: 1210px;
+    margin: 0 auto;
+  }
 }
-
- @media screen and (max-width: 1260px){
-     #bigContentbox{
-      width: 910px;
-      margin: 0 auto;
-     }   
+@media screen and (max-width: 1260px) {
+  #bigContentbox {
+    width: 910px;
+    margin: 0 auto;
+  }
 }
- @media screen and (max-width: 965px){
-     #bigContentbox{
-      width: 605px;
-      margin: 0 auto;
-     }   
+@media screen and (max-width: 965px) {
+  #bigContentbox {
+    width: 605px;
+    margin: 0 auto;
+  }
 }
-

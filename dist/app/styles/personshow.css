@@ -1,147 +1,158 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body,html{
-	width: 100%;
+body,
+html {
+  width: 100%;
 }
-.clear::after{
-	clear: both;
-	display: block;
-	content:"";
+.clear::after {
+  clear: both;
+  display: block;
+  content: "";
 }
-ul li{
-	list-style: none;
+ul li {
+  list-style: none;
 }
-h2{
-	font-size: 25px;
+h2 {
+  font-size: 25px;
 }
-.pmwrap{
-	width: 100%;
+.pmwrap {
+  width: 100%;
+  /* pmheader 结束 */
+  /* myInp 结束 */
 }
-.pmwrap .pmheader{
-	width: 100%;
+.pmwrap .pmheader {
+  width: 100%;
+  /* pmnav 结束 */
+  /* pmBack 结束 */
 }
-.pmwrap .pmheader .pmnav{
-	width: 100%;
-	height:45px;
-	background: #2d3846;
-	line-height: 45px;
-	position: relative;
-	top: 0;
-	z-index: 1;
+.pmwrap .pmheader .pmnav {
+  width: 100%;
+  height: 45px;
+  background: #2d3846;
+  line-height: 45px;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  /* topSeek 结束 */
 }
-.pmwrap .pmheader .pmnav a .shining{
-	height: 30px;
-	display: inline-block;
-	position: absolute;
-	top: 10px;
-	margin-left: 20%;
+.pmwrap .pmheader .pmnav a .shining {
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  margin-left: 20%;
 }
-.pmwrap .pmheader .pmnav .topSeek{
-	height: 45px;width: 25%;
-	position: relative;
-	top: 0px;
-	display: inline-block;
-	margin-left: 35%;
+.pmwrap .pmheader .pmnav .topSeek {
+  height: 45px;
+  width: 25%;
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  margin-left: 35%;
+  /* pmSeek 结束 */
 }
-.pmwrap .pmheader .pmnav .topSeek .navSeek{
-	border: 1px solid #ccc;
-	background: rgba(255,255,255,0.1);
-	width: 100%;
-	position: absolute;	
-	bottom: 10px;
-	padding: 3px 3px;
+.pmwrap .pmheader .pmnav .topSeek .navSeek {
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  padding: 3px 3px;
 }
-.pmwrap .pmheader .pmnav .topSeek .pmSeek{
-	position: absolute;
-	top: 0px;
-	right: 5px;
-	cursor: pointer;
+.pmwrap .pmheader .pmnav .topSeek .pmSeek {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  cursor: pointer;
 }
-.pmwrap .pmheader .pmnav .topSeek .pmSeek img{
-	height: 16px;
+.pmwrap .pmheader .pmnav .topSeek .pmSeek img {
+  height: 16px;
 }
-.pmwrap .pmheader .pmnav .addPro{
-	margin-left: 5%;
-	margin-bottom: 10px;
-	cursor: pointer;
+.pmwrap .pmheader .pmnav .addPro {
+  margin-left: 5%;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
-.pmwrap .pmheader .pmnav .allPro{
-	margin-left: 10px;
-	margin-bottom: 10px;
-	cursor: pointer;
+.pmwrap .pmheader .pmnav .allPro {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
-.pmwrap .pmheader .pmnav .pmMass{
-	margin-left: 10px;
-	margin-bottom: 10px;
-	cursor: pointer;
+.pmwrap .pmheader .pmnav .pmMass {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
-.pmwrap .pmheader .pmnav .pmBlue{
-	margin-left: -5px;
-	margin-bottom: 25px;
+.pmwrap .pmheader .pmnav .pmBlue {
+  margin-left: -5px;
+  margin-bottom: 25px;
 }
-.pmwrap .pmheader .pmnav .pmName{
-	color: white;
-	font-weight: 100;
-	font-size: 20px;
-	display: inline-block;
-	position: absolute;
-	top: 2px;
-	margin-left: 1%;
+.pmwrap .pmheader .pmnav .pmName {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  margin-left: 1%;
 }
-.pmwrap .pmheader .pmnav .pmPhoto{
-	width: 35px;
-	margin-left: 100px;
-	margin-bottom: 2px;
-	border:2px solid #bbb;
-	border-radius: 50%;
-	cursor: pointer;
+.pmwrap .pmheader .pmnav .pmPhoto {
+  width: 35px;
+  margin-left: 100px;
+  margin-bottom: 2px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.pmwrap .pmheader .projectList p{
-	margin: 0 0 10px;
+.pmwrap .pmheader .projectList p {
+  margin: 0 0 10px;
 }
-.pmwrap .pmheader .mp-menu ul li > a{
-	font-size: 16px;
+.pmwrap .pmheader .mp-menu ul li > a {
+  font-size: 16px;
 }
-.pmwrap .pmheader .mp-menu ul li > a img{
-	vertical-align: bottom;
+.pmwrap .pmheader .mp-menu ul li > a img {
+  vertical-align: bottom;
 }
-.pmwrap .pmheader .pmBack{
-	width: 100%;
-	height: 350px;
-	position: relative;top: -45px;
-	z-index: 0;
+.pmwrap .pmheader .pmBack {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  top: -45px;
+  z-index: 0;
 }
-.pmwrap .pmheader .pmBack .bg{
-	width: 100%;
-	height: 100%;
+.pmwrap .pmheader .pmBack .bg {
+  width: 100%;
+  height: 100%;
 }
-.pmwrap .pmheader .pmBack .bgmen{
-	width: 100%;
-	height: 305px;
-	background: rgba(0,0,0,0.2);
-	position: absolute;
-	top: 45px;
+.pmwrap .pmheader .pmBack .bgmen {
+  width: 100%;
+  height: 305px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 45px;
 }
-.pmwrap .pmheader .pmBack .pmChange{
-	width: 196px;
-	height: 196px;
-	border-radius: 50%;
-	border: 8px solid rgba(255,255,255,0.5);
-	position: absolute;
-	top: 100px;
-	margin-left: 20%;
-	box-sizing: content-box;
+.pmwrap .pmheader .pmBack .pmChange {
+  width: 196px;
+  height: 196px;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 100px;
+  margin-left: 20%;
+  box-sizing: content-box;
 }
-.pmwrap .pmheader .pmBack .pmChange .changeHeadpic{
-	height: 196px;
-	width: 196px;
-	border-radius: 50%;
-	font-size: 0;
-	opacity: 0;
-	position: relative;top: -192px;left: 10px;
-	z-index: 2;
+.pmwrap .pmheader .pmBack .pmChange .changeHeadpic {
+  height: 196px;
+  width: 196px;
+  border-radius: 50%;
+  font-size: 0;
+  opacity: 0;
+  position: relative;
+  top: -192px;
+  left: 10px;
+  z-index: 2;
 }
 .pmwrap .pmheader .pmBack .pmChange img {
   width: 196px;
@@ -237,11 +248,11 @@ h2{
   font-size: 16px;
   background-color: #fff;
 }
-.pmwrap .myInp textarea{
-	background-color: #fff;
-	border: 0;
-	margin-top: 8px;
-	padding-bottom: 10px;
+.pmwrap .myInp textarea {
+  background-color: #fff;
+  border: 0;
+  margin-top: 8px;
+  padding-bottom: 10px;
 }
 .pmwrap .myInp .inpLeft {
   width: 48%;
@@ -256,7 +267,6 @@ h2{
 }
 .pmwrap .myInp .inpRight {
   width: 48%;
-
   float: left;
   margin-left: 4%;
 }
@@ -285,21 +295,376 @@ h2{
 .pmwrap .myInp .email .open2 {
   margin-left: -10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.pmwrap .myList {
+  width: 90%;
+  margin: 0 auto;
+}
+.pmwrap .myList .myAbout {
+  color: #333;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.pmwrap .myList .myAbout .my1 {
+  width: 50%;
+  float: left;
+  font-size: 24px;
+  padding: 10px 0;
+}
+.pmwrap .myList .myAbout .my2 {
+  width: 50%;
+  float: left;
+  font-size: 24px;
+  padding: 10px 0;
+}
+.pmwrap .myList .myAbout .btnColor {
+  color: #00a0ff;
+  border-bottom: 2px solid #00a0e9;
+}
+.pmwrap .myList .myAbout .otherColor {
+  color: #959595;
+  border-bottom: 2px solid #e0e0e0;
+}
+.pmwrap .myContent {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* textContent 结束  */
+}
+.pmwrap .myContent .con1,
+.pmwrap .myContent .con2 {
+  width: 100%;
+  float: left;
+}
+.pmwrap .myContent .con2 {
+  display: none;
+}
+.pmwrap .myContent #textContent {
+  /* textContent 项目展示 开始*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  /* ul 结束  */
+}
+.pmwrap .myContent #textContent .bigContentbox {
+  margin: 46px auto 0;
+  max-width: 1546px;
+  padding-bottom: 115px;
+  box-sizing: border-box;
+}
+.pmwrap .myContent #textContent ul .con {
+  width: 280px;
+  height: 450px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin: 0 22px 22px 0;
+  border-radius: 4px;
+  /* 项目参与人 结束*/
+  /* writeCon 项目发起人结束*/
+}
+.pmwrap .myContent #textContent ul .con h4 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.pmwrap .myContent #textContent ul .con .projectDes {
+  height: 45px;
+  padding: 5px 5px;
+  overflow: ellipsis;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bbb;
+}
+.pmwrap .myContent #textContent ul .con .proImg {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-image: url(../images/common/pic.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.pmwrap .myContent #textContent ul .con .author {
+  width: 100%;
+  height: 80px;
+  background: white;
+  padding: 5px 0px;
+}
+.pmwrap .myContent #textContent ul .con .author .authorMsg {
+  width: 20%;
+  text-align: center;
+  float: left;
+  margin-left: 10px;
+}
+.pmwrap .myContent #textContent ul .con .author .authorMsg .authorImg {
+  border-radius: 50%;
+  width: 50px;
+  cursor: pointer;
+}
+.pmwrap .myContent #textContent ul .con .author .partner {
+  float: left;
+  padding-left: 10px;
+  font-size: 14px;
+  width: 75%;
+  margin-top: 10px;
+}
+.pmwrap .myContent #textContent ul .con .author .partner .partner1 {
+  width: 100%;
+}
+.pmwrap .myContent #textContent ul .con .author .partner .interact {
+  height: 15px;
+  margin-left: 50%;
+  margin-top: 20px;
+}
+.pmwrap .myContent #textContent ul .con .author .partner .interact img {
+  height: 15px;
+  width: 15px;
+}
+.pmwrap .myContent #textContent ul .con .author .partner .interact .likeNum {
+  color: #00a0ff;
+}
+.pmwrap .myContent #textContent ul .con .author .partner .interact .zanNum {
+  color: #00a0ff;
+}
+.pmwrap .myContent #textContent ul .con .countPP {
+  color: #00a0ff;
+}
+.pmwrap .myContent #textContent ul .con .txt {
+  /*  项目参与人信息*/
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: none;
+}
+.pmwrap .myContent #textContent ul .con .txt .friends {
+  width: 100%;
+  height: 100px;
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+.pmwrap .myContent #textContent ul .con .txt img {
+  border-radius: 50%;
+  width: 80%;
+}
+.pmwrap .myContent #textContent ul .con .txt .part {
+  width: 25%;
+  padding: 5px 0px;
+}
+.pmwrap .myContent #textContent ul .con .txt p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.pmwrap .myContent #textContent ul .con .writeCon {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: none;
+  /*proHot 结束*/
+  /*  writeMess 结束*/
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeImg {
+  height: 90px;
+  width: 90px;
+  border: 2px solid #493c37;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.pmwrap .myContent #textContent ul .con .writeCon p {
+  font-size: 20px;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .proHot {
+  /*proHot 开始*/
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .proHot img {
+  height: 15px;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .proHot .proNum {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #484747;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .proHot .big {
+  font-size: 14px;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess {
+  width: 84%;
+  margin: 15px auto;
+  font-size: 12px;
+  /*  div 结束*/
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess .projectIntroduce {
+  height: 30px;
+  float: left;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess .projectIntroduce span {
+  float: left;
+  margin-top: 8px;
+  margin-left: -10px;
+  color: #ccc;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess div {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess div p {
+  float: left;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 100;
+  color: #ccc;
+  margin: 0 0;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess div .p1 {
+  width: 20%;
+  float: left;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess div .p2 {
+  width: 75%;
+  /*height: 17px;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}
+.pmwrap .myContent #textContent ul .con .writeCon .writeMess div .p3 {
+  width: 75%;
+  margin-left: 5px;
+  height: 25px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  /*float: left;*/
+}
+.pmwrap .myContent #textContent ul .countP {
+  color: #00a0ff;
+  position: relative;
+  top: -45px;
+  left: 75px;
+}
+.pmwrap .TAcircle {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.pmwrap .TAcircle #circleHead {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+.pmwrap .TAcircle #textContent {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.pmwrap .TAcircle #textContent .bigContentbox {
+  margin: 46px auto 0;
+  max-width: 1546px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.pmwrap .TAcircle #textContent ul {
+  background-color: #f2f2f2;
+}
+.pmwrap .TAcircle #textContent ul .con {
+  width: 180px;
+  height: 432px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin: 0 40px 22px 0;
+  background-color: #fff;
+  padding-top: 20px;
+}
+.pmwrap .TAcircle #textContent ul .con p {
+  margin: 5px auto;
+  text-align: center;
+}
+.pmwrap .TAcircle #textContent ul .con .circlePic {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 70px;
+  overflow: hidden;
+}
+.pmwrap .TAcircle #textContent ul .con .circlePic img {
+  width: 100%;
+  height: 100%;
+}
+.pmwrap .TAcircle #textContent ul .con .circleName {
+  font-size: 16px;
+  font-weight: 700;
+}
+.pmwrap .TAcircle #textContent ul .con .circleSkill {
+  font-size: 14px;
+  color: #545454;
+}
+.pmwrap .TAcircle #textContent ul .con .circleNum {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.pmwrap .TAcircle #textContent ul .con span {
+  color: #24a7ff;
+}
+.pmwrap .TAcircle #textContent ul .con .circleProPic {
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.pmwrap .TAcircle #textContent ul .con .circleProPic img {
+  height: 100%;
+  width: 100%;
+}
+.pmwrap .TAcircle #textContent ul .con .circleMen {
+  height: 26px;
+  width: 100%;
+  position: relative;
+  top: -26px;
+  background: rgba(0, 0, 0, 0.6);
+  line-height: 26px;
+  display: none;
+}
+.pmwrap .TAcircle #textContent ul .con .circleMen span {
+  color: white;
+  font-size: 14px;
+}
+.pmwrap .TAcircle #textContent ul .con .circleMen .attenBtn {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+}
+.pmwrap .TAcircle #textContent ul .con:hover .circleMen {
+  display: block;
+}
+/* pmwrap 结束 */
 footer {
   height: 60px;
   background: #333;
@@ -316,4 +681,50 @@ footer .about {
 }
 footer img {
   vertical-align: middle;
+}
+@media screen and (max-width: 1920px) {
+  #bigContentbox {
+    width: 1546px;
+    margin: 0 auto;
+  }
+  #circleBox {
+    width: 1546px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1637px) {
+  #bigContentbox {
+    width: 1210px;
+    margin: 0 auto;
+  }
+  #circleBox {
+    width: 1320px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1500px) {
+  #circleBox {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1260px) {
+  #bigContentbox {
+    width: 910px;
+    margin: 0 auto;
+  }
+  #circleBox {
+    width: 880px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 965px) {
+  #bigContentbox {
+    width: 605px;
+    margin: 0 auto;
+  }
+  #circleBox {
+    width: 660px;
+    margin: 0 auto;
+  }
 }

@@ -1,11 +1,9 @@
 {
-  "name": "shining1",
+  "name": "shining",
   "version": "1.0.0",
-  "description": "1.0",
+  "description": "git1.0",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-less": "^3.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
@@ -19,6 +17,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunyuling/shining.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunyuling/shining/issues"
+  },
+  "homepage": "https://github.com/sunyuling/shining#readme"
 }

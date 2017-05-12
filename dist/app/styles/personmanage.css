@@ -319,6 +319,10 @@ h2 {
   color: #00a0ff;
   border-bottom: 2px solid #00a0e9;
 }
+.pmwrap .myList .myAbout .otherColor {
+  color: #959595;
+  border-bottom: 2px solid #e0e0e0;
+}
 .pmwrap .myList .myContent {
   width: 100%;
   overflow: hidden;
@@ -426,7 +430,7 @@ h2 {
   display: block;
 }
 .pmwrap .myList .myContent .comment {
-  width: 218px;
+  width: 240px;
   height: 350px;
   float: left;
   margin-left: 5%;
@@ -434,7 +438,7 @@ h2 {
   /*panel1 结束*/
 }
 .pmwrap .myList .myContent .comment .activeName {
-  width: 180px;
+  width: 210px;
   font-weight: 500;
   padding: 10px 8px;
   border: 0;
@@ -452,7 +456,7 @@ h2 {
   margin-left: 5px;
 }
 .pmwrap .myList .myContent .comment .projectDescript textarea {
-  width: 208px;
+  width: 225px;
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: #fff;
@@ -580,18 +584,33 @@ footer img {
   vertical-align: middle;
 }
 /*媒体查询*/
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1580px) {
   #myList {
     width: 65%;
   }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1460px) {
   #myList {
     width: 70%;
   }
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1360px) {
+  #myList {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1270px) {
+  #myList {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1200px) {
   #myList {
     width: 85%;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #myList {
+    width: 90%;
   }
 }

@@ -18,6 +18,7 @@ ul li {
   width: 100%;
   /*proheader 结束*/
   /*newProject 结束*/
+  /*projectShow 结束*/
 }
 .pmwrap .pmheader {
   width: 100%;
@@ -120,10 +121,21 @@ ul li {
 }
 .pmwrap .newProject .projectPic .input-group #preview {
   height: 100%;
+  position: relative;
 }
 .pmwrap .newProject .projectPic .input-group #preview #imghead {
   width: 100%;
   height: 100%;
+}
+.pmwrap .newProject .projectPic .input-group #preview .changePic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  display: none;
+}
+.pmwrap .newProject .projectPic .input-group #preview:hover .changePic {
+  display: block;
 }
 .pmwrap .newProject .deletPro {
   position: absolute;
@@ -140,9 +152,10 @@ ul li {
 }
 .pmwrap .newProject .projectMess {
   float: left;
-  width: 550px;
+  width: 50%;
   height: 300px;
   margin-left: 100px;
+  position: relative;
 }
 .pmwrap .newProject .projectMess p {
   width: 80px;
@@ -166,10 +179,25 @@ ul li {
 }
 .pmwrap .newProject .projectMess .inpTop textarea {
   border: 0;
+  width: 65%;
   font-size: 16px;
   padding-top: 3px;
   color: #333;
   background-color: #f2f2f2;
+}
+.pmwrap .newProject .projectMess .inpTop .projectName {
+  font-size: 24px;
+  position: absolute;
+  top: -5px;
+}
+.pmwrap .newProject .projectMess .inpTop .tubiao {
+  float: right;
+}
+.pmwrap .newProject .projectMess .inpTop .proZan {
+  color: #3bacfd;
+}
+.pmwrap .newProject .projectMess .inpTop .proAtten {
+  color: #3bacfd;
 }
 .pmwrap .newProject .projectMess .inpLeft {
   width: 50%;
@@ -183,6 +211,296 @@ ul li {
   border: 0;
   color: #333;
   background-color: #f2f2f2;
+}
+.pmwrap .newProject .projectMess .close {
+  float: left;
+}
+.pmwrap .newProject .projectMess .zanTeam {
+  float: right;
+}
+.pmwrap .projectTeam {
+  width: 100%;
+  height: 300px;
+  background-color: #e9ebec;
+  padding: 30px;
+  text-align: center;
+}
+.pmwrap .projectTeam .projectTeamHead {
+  font-size: 30px;
+}
+.pmwrap .projectTeam .projectTeamPeople {
+  width: 810px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  position: relative;
+}
+.pmwrap .projectTeam .projectTeamPeople li {
+  width: 80px;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+.pmwrap .projectTeam .projectTeamPeople li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #bababb;
+}
+.pmwrap .projectTeam .projectTeamPeople li .delete {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 65px;
+}
+.pmwrap .projectTeam .projectTeamPeople li .addPartner {
+  height: 75px;
+  border-radius: 0;
+  border: 0;
+}
+.pmwrap .projectTeam .projectTeamPeople .projectLeader {
+  width: 100px;
+  border-right: 1px solid #ccc;
+  margin-left: 130px;
+}
+.pmwrap .projectTeam .projectTeamPeople .projectP1 {
+  margin-left: 10px;
+}
+.pmwrap .projectTeam .projectTeamPeople .proLeaderName {
+  color: black;
+  font-size: 14px;
+}
+.pmwrap .projectTeam .projectTeamPeople .proPartnerName {
+  color: black;
+  font-size: 14px;
+}
+.pmwrap .projectTeam .projectTeamPeople .proPartnerSkill {
+  color: #bababb;
+  font-size: 12px;
+}
+.pmwrap .projectTeam .projectTeamPeople button {
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  background-color: #00a0ff;
+  border: 0;
+  margin-top: 30px;
+}
+.pmwrap .projectTeam .projectTeamPeople .quitTeam {
+  display: none;
+}
+.pmwrap .projectShow {
+  width: 100%;
+  padding-top: 50px;
+}
+.pmwrap .projectShow .uploadBtn {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.pmwrap .projectShow .proDisplay {
+  width: 55%;
+  margin: 0 auto;
+}
+.pmwrap .projectShow .proDisplay .con1 {
+  width: 100%;
+  margin-bottom: 30px;
+  /*myCon 结束*/
+  /*comment 结束*/
+}
+.pmwrap .projectShow .proDisplay .con1 .npm1 {
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+}
+.pmwrap .projectShow .proDisplay .con1 .npm2 {
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+}
+.pmwrap .projectShow .proDisplay .con1 .playVideo {
+  position: absolute;
+  left: 40%;
+  top: 80px;
+}
+.pmwrap .projectShow .proDisplay .con1 .myPic {
+  width: 650px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.pmwrap .projectShow .proDisplay .con1 .myCon {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-color: #000;
+}
+.pmwrap .projectShow .proDisplay .con1 .myCon .img1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/common/probg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.pmwrap .projectShow .proDisplay .con1 .myCon .men1 {
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -30px;
+  display: none;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.pmwrap .projectShow .proDisplay .con1 .myCon .men1 li {
+  float: left;
+  margin-right: 20px;
+}
+.pmwrap .projectShow .proDisplay .con1 .myCon:hover .men1 {
+  display: block;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment {
+  width: 240px;
+  height: 350px;
+  float: left;
+  margin-left: 5%;
+  background: #f2f2f2;
+  /*panel1 结束*/
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .activeName {
+  width: 210px;
+  font-weight: 500;
+  padding: 10px 8px;
+  border: 0;
+  background-color: #f2f2f2;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .deslock {
+  position: relative;
+  top: 8px;
+  right: 3px;
+  height: 5%;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .projectDescript {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .projectDescript textarea {
+  width: 225px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 0;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .item {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .otherPhoto {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .otherCon {
+  float: left;
+  width: 70%;
+  height: 40px;
+  margin-left: 5px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .otherCon span {
+  height: 20px;
+  display: block;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .otherCon .otherName {
+  font-size: 12px;
+  height: 20px;
+  position: relative;
+  top: -10px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .otherCon .otherDis {
+  font-size: 12px;
+  margin-left: 0;
+  padding: 0;
+  position: relative;
+  top: -10px;
+  border-radius: 5px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .itemM {
+  display: block;
+  width: 95%;
+  position: relative;
+  float: left;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .itemM img {
+  width: 40px;
+  height: 40px;
+  float: right;
+  border-radius: 50%;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .itemM p {
+  float: right;
+  font-size: 12px;
+  height: 18px;
+  width: 75%;
+  text-align: right;
+  margin-top: 8px;
+  /*margin-right: 2px;*/
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .panel1 .itemM span {
+  float: left;
+  display: block;
+  font-size: 12px;
+  width: 75%;
+  /*height: 20px;*/
+  text-align: right;
+  word-break: break-all;
+  /*margin-top: 5px;*/
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .addCon {
+  border: 0;
+  height: 20px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 8px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .addBtn {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 70%;
+  background: #f2f2f2;
+  border: 1px solid #bbb;
+  padding: 1px 2px;
+  margin-bottom: 5px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .pmActive {
+  padding: 2px 8px;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .pmActive span {
+  color: #00a0e9;
+}
+.pmwrap .projectShow .proDisplay .con1 .comment .pmActive .pmShare {
+  margin-left: 50%;
+}
+.pmwrap .projectShow .proDisplay .con1 .myPic:hover .men1 {
+  display: block;
 }
 /*pmwrap 结束*/
 footer {
@@ -201,4 +519,40 @@ footer .about {
 }
 footer img {
   vertical-align: middle;
+}
+/*媒体查询*/
+@media screen and (max-width: 1730px) {
+  #proDisplay {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  #proDisplay {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1470px) {
+  #proDisplay {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1370px) {
+  #proDisplay {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1270px) {
+  #proDisplay {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1190px) {
+  #proDisplay {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #proDisplay {
+    width: 90%;
+  }
 }

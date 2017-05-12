@@ -291,9 +291,8 @@ h2{
 	}	/* myInp 结束 */
 
 .myList{
-	width: 60%;
+	width: 90%;
 	margin:0 auto;	
-	margin-bottom:30px;
 	.myAbout{
 		color:#333;
 		width:100%;
@@ -315,11 +314,16 @@ h2{
 				color:#00a0ff;
 				border-bottom: 2px solid #00a0e9;
 			}
-		
+			.otherColor{
+				color: #959595;
+				border-bottom: 2px solid #e0e0e0;
+			}
 
 	}
+}
 	.myContent{
-		width:100%;			
+		width:90%;
+		margin: 0 auto;			
 		overflow:hidden;
 		.con1,.con2{
 			width:100%;
@@ -328,10 +332,336 @@ h2{
 		.con2{
 			display: none;
 		}
+	#textContent{ /* textContent 项目展示 开始*/
+		width: 100%;
+		margin-left: auto;margin-right: auto;
+		box-sizing: border-box;
+		.bigContentbox{
+			margin: 46px auto 0;
+			max-width: 1546px;
+			padding-bottom: 115px;
+			box-sizing: border-box;
+		}
+	
+		ul{		
+		.con{
+			width: 280px;
+			height:450px;
+			float:left;
+			position:relative;
+			cursor:pointer;
+			margin: 0 22px 22px 0;
+			border-radius: 4px;
+			h4{
+				margin-top: 8px;
+				margin-bottom: 8px;
+				font-weight: 400;
+			}
+			.projectDes{
+				height: 45px;
+				padding:5px 5px;
+				overflow: ellipsis;
+				font-size: 14px;
+				line-height: 18px;
+				color:#bbb;
+			}
+			.proImg{
+				width:100%;
+				height:300px;
+				text-align: center;
+				background-image: url(../images/common/pic.gif);
+				background-repeat: no-repeat;
+				background-position:center;
+				-webkit-background-size: contain;
+				background-size: contain;
+			}
+			.author{
+				width:100%;
+				height:80px;
+				background:white;
+				padding:5px 0px;
+				.authorMsg{
+					width:20%;
+					text-align:center;
+					float:left;
+					margin-left: 10px;
+					.authorImg{
+						border-radius:50%;
+						width:50px;
+						cursor: pointer;
+					}
+				}
+				.partner{
+					float:left;
+					padding-left:10px;
+					font-size:14px;
+					width:75%;margin-top: 10px;
+					.partner1{
+						width:100%;
+					}
+					
+					.interact{
+						height:15px;
+						margin-left: 50%;
+						margin-top: 20px;
+						img{
+							height:15px;
+							width:15px;
+						}
+						.likeNum{
+							color:#00a0ff;
+						}
+						.zanNum{
+							color:#00a0ff;
+						}
+					}
+				}
+			}
+			.countPP{
+			color:#00a0ff;
+			}
+			.txt{ /*  项目参与人信息*/
+				width:100%;
+				height:450px;
+				position:absolute;
+				left:0;bottom:0px;
+				display:flex;
+				flex-wrap:wrap;
+				justify-content:space-between;
+				text-align:center;
+				background: rgba(0,0,0,0.6);
+				color:#fff;
+				display:none;
+				
+				.friends{
+					width:100%;
+					height:100px;	
+					padding:10px 5px;				
+					display:flex;
+					flex-wrap:wrap;
+					justify-content:space-between;
+					text-align:center;					
+					color:#fff;
+					
+				}
+				img{
+					border-radius:50%;
+					width:80%;
+				}
+				.part{
+					width:25%;
+					padding:5px 0px;	
+				}
+
+				p{
+					margin:0;padding:0;font-size:12px;
+
+				}
+			}	/* 项目参与人 结束*/
+			.writeCon{
+				width:100%;
+				height:450px;
+				position:absolute;
+				left:0;bottom:0px;
+				text-align:center;
+				background: rgba(0,0,0,0.8);
+				color:#fff;
+				display: none;
+				.writeImg{
+					height: 90px;
+					width: 90px;
+					border:2px solid #493c37;
+					border-radius: 50%;
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+				p{
+					font-size: 20px;
+				}
+
+				.proHot{	/*proHot 开始*/
+					width: 70%;
+					margin: 0 auto;
+					text-align: center;
+					img{
+						height: 15px;
+					}
+					.proNum{
+						float: left;
+						width: 50%;
+						border-right: 1px solid #484747;
+					}
+					.proPeo{
+						
+					}
+					.big{
+						font-size: 14px;
+
+					}
+				}	/*proHot 结束*/
+				.writeMess{
+					width: 84%;
+					margin: 15px auto;
+					font-size: 12px;
+					.projectIntroduce{
+						height: 30px;
+						float: left;
+						span{
+							float: left;
+							margin-top: 8px;
+							margin-left: -10px;
+							color: #ccc;
+						}
+					}
+					div{
+						width: 100%;
+						height: auto;
+						margin-bottom: 8px;
+						p{
+							float: left;
+							font-size: 12px;
+							text-align: left;
+							font-weight: 100;
+							color: #ccc;
+							margin: 0 0;
+						}
+						.p1{
+							width: 20%;
+							float: left;
+						}	
+						.p2{
+							width: 75%;
+							/*height: 17px;*/
+							overflow: hidden;
+							text-overflow: ellipsis;
+							float: left;
+						}
+						.p3{
+							width: 75%;
+							margin-left: 5px;
+							height: 25px;
+							display: -webkit-box;
+							-webkit-box-orient:vertical;
+							-webkit-line-clamp:2;
+							overflow: hidden;
+							/*float: left;*/
+							
+						}
+					}	/*  div 结束*/
+					
+				}	/*  writeMess 结束*/
+
+			}	/* writeCon 项目发起人结束*/
+		}
+		.countP{
+			color:#00a0ff;
+			position:relative;top:-45px;left:75px;
+		}
+		
+		
+	}	/* ul 结束  */
+
+	} /* textContent 结束  */
 	}
-}	/* mylist 结束 */
 
 
+	.TAcircle{
+		width: 100%;
+		background-color: #f2f2f2;
+		#circleHead{
+			text-align: center;
+			font-size: 30px;
+			padding-top: 20px;
+		}
+		#textContent{
+			width: 100%;
+			margin-left: auto;margin-right: auto;
+			box-sizing: border-box;
+			background-color: #f2f2f2;
+			.bigContentbox{
+				margin: 46px auto 0;
+				max-width: 1546px;
+				padding-bottom: 50px;
+				box-sizing: border-box;
+				background-color: #f2f2f2;
+			}
+		
+			ul{		
+				background-color: #f2f2f2;
+				.con{
+					width: 180px;
+					height:432px;
+					float:left;
+					position:relative;
+					cursor:pointer;
+					margin: 0 40px 22px 0;
+					background-color: #fff;
+					padding-top: 20px;
+					p{
+						margin: 5px auto;
+						text-align: center;
+					}
+					.circlePic{
+						width: 140px;
+						height: 140px;
+						margin: 0 auto;
+						border-radius: 70px;
+						overflow: hidden;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.circleName{
+						font-size: 16px;
+						font-weight: 700;
+					}
+					.circleSkill{
+						font-size: 14px;
+						color: #545454;
+					}
+					.circleNum{
+						margin-top: 10px;
+						padding-left: 5px;
+					}
+					span{
+						color: #24a7ff;
+					}
+					.circleProPic{
+						margin-top: 5px;
+						width: 100%;
+						height: 200px;
+						overflow: hidden;
+						img{
+							height: 100%;
+							width: 100%;
+						}
+					}
+					.circleMen{
+						height: 26px;
+						width: 100%;
+						position: relative;top: -26px;
+						background: rgba(0,0,0,0.6);
+						line-height: 26px;
+						display: none;
+						span{
+							color: white;
+							font-size: 14px;
+						}
+						.attenBtn{
+							position: absolute;
+							right: 8px;
+							top: 3px;
+						}
+					}
+
+				}
+				.con:hover .circleMen{
+					display: block;
+				}
+			}
+		}
+	}
 
 
 
@@ -355,3 +685,51 @@ footer .about {
 footer img {
   vertical-align: middle;
 }
+
+@media screen and (max-width: 1920px){
+     #bigContentbox{
+     	width: 1546px;
+     	margin: 0 auto;
+     }   
+     #circleBox{
+     	width: 1546px;
+     	margin: 0 auto;
+     } 
+}
+ @media screen and (max-width: 1637px){
+     #bigContentbox{
+     	width: 1210px;
+		margin: 0 auto;
+     }   
+     #circleBox{
+     	width: 1320px;
+		margin: 0 auto;
+     }  
+}
+ @media screen and (max-width: 1500px){ 
+     #circleBox{
+     	width: 1100px;
+		margin: 0 auto;
+     }  
+}
+ @media screen and (max-width: 1260px){
+     #bigContentbox{
+     	width: 910px;
+     	margin: 0 auto;
+     }   
+     #circleBox{
+     	width: 880px;
+     	margin: 0 auto;
+     } 
+}
+ @media screen and (max-width: 965px){
+     #bigContentbox{
+     	width: 605px;
+     	margin: 0 auto;
+     }  
+     #circleBox{
+     	width: 660px;
+     	margin: 0 auto;
+     } 
+}
+

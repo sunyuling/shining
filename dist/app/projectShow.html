@@ -73,7 +73,8 @@
           
             <div class="col-sm-9 big-photo">
                 <div id="preview">
-                    <img id="imghead" src="images/common/proImg.png" width="90" height="90" onclick="$('#previewImg').click();">
+                    <img id="imghead" src="images/common/proImg.png" width="90" height="90">
+                    <img src="images/common/changeImg.png" class="changePic" onclick="$('#previewImg').click();">
                 </div>         
             	<input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
                 	<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">
@@ -87,7 +88,7 @@
 	</div>
 	<!-- projectMess 开始 -->
 	<div class="projectMess clear">
-		<div class="clear inpTop"><p class="clear">项目名称</p>&nbsp;<input type="text" name="" value="英特尔品牌日" disabled="disabled"></div>
+		<div class="clear inpTop"><p class="clear">项目名称</p>&nbsp;<input type="text" name="" value="英特尔品牌日" disabled="disabled" class="projectName"><span class="tubiao"><span class="proZan"><img src="images/common/zan1.png" class="zan">&nbsp;<span class="proZanNum1">120</span></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="proAtten"><img src="images/common/attenProNum.png" class="zan">&nbsp;<span class="proZanNum2">23</span></span></span></div>
 		<hr style="color:#bbb;">
 		<div class="clear inpLeft"><p class="clear">项目职责</p>&nbsp;<input type="text" name="" value="Inter Brand Day" disabled="disabled"></div>	
 		<div class="clear inpLeft"><p class="clear">项目职责</p>&nbsp;<input type="text" name="" value="Inter Brand Day" disabled="disabled"></div>	
@@ -96,18 +97,141 @@
 		<div class="clear inpLeft"><p class="clear">项目地点</p>&nbsp;<input type="text" name="" value="北京" disabled="disabled"></div>	
 		<div class="clear inpLeft"><p class="clear">项目地点</p>&nbsp;<input type="text" name="" value="北京" disabled="disabled"></div>	
 		<hr style="color:#bbb;">
-		<div class="clear inpTop"><p class="clear">项目介绍</p>&nbsp;<textarea cols="50" rows="5">人类通过分析他人的眼神，揣摩对方情绪。此过程原本只是一种对环境刺激的普遍反映，而后演化为深刻感受的交流方式。</textarea></div><br><br><br>
+		<div class="clear inpTop"><p class="clear">项目介绍</p>&nbsp;<textarea cols="50" rows="3">人类通过分析他人的眼神，揣摩对方情绪。此过程原本只是一种对环境刺激的普遍反映，而后演化为深刻感受的交流方式。</textarea></div><br><br>
 		<div class="close clear"><img src="images/common/lock.png"></div> 
-		<div class="zan clear"><img src="images/common/zan.png"></div> 
-		<div class="attention clear"><img src="images/common/lock.png"></div> 
-		<div class="share clear"><img src="images/common/lock.png"></div> 
+		<div class="zanTeam clear">
+		<span class="like"><img src="images/common/zanH.png"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="attention"><img src="images/common/attenPicH.png"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="share"><img src="images/common/shareH.png"></span>&nbsp;&nbsp;
+		</div> 
+		
 	</div>
 	<!-- projectMess 结束 -->
 	</div>
 	<!-- newProject 结束-->
-
-
-
+	<div class="projectTeam">
+		<p class="projectTeamHead">项目团队</p>
+		<ul class="projectTeamPeople clear">
+			<li class="projectLeader"><a href=""><img src="images/common/leader.png" alt=""><p class="proLeaderName">Sara</p></a></li>
+			<li class="projectP1"><a href=""><img src="images/common/leader.png" alt=""><p class="proPartnerName">Sara</p><p class="proPartnerSkill">3D设计师</p></a>
+			<img src="images/common/delet.png" alt="" class="delete"></li>
+			<li><a href=""><img src="images/common/leader.png" alt=""><p class="proPartnerName">Sara</p><p class="proPartnerSkill">3D设计师</p></a><img src="images/common/delet.png" alt="" class="delete"></li>
+			<li><a href=""><img src="images/common/leader.png" alt=""><p class="proPartnerName">Sara</p><p class="proPartnerSkill">文案</p></a><img src="images/common/delet.png" alt="" class="delete"></li>
+			<li><a href=""><img src="images/common/leader.png" alt=""><p class="proPartnerName">Sara</p><p class="proPartnerSkill">3D设计师</p></a><img src="images/common/delet.png" alt="" class="delete"></li>
+			<li><a href=""><img src="images/common/addPartner.png" alt="" class="addPartner"></a></li>
+			<button class="addTeam">加入项目组</button>
+			<button class="quitTeam">退出项目组</button>
+		</ul>
+	</div>
+	<div class="projectShow">
+		<div class="uploadBtn">
+			<div class="uploadImg"><img src="images/common/addPic.png" alt=""></div>
+			<div class="uploadVideo"><img src="images/common/shareVideo.png" alt=""></div>
+			<div class="uploadWord"><img src="images/common/addWord.png" alt=""></div>
+		</div>
+		<div class="proDisplay" id="proDisplay">
+			<div class="con1"> 
+              <div class="npm1">
+              	<div class="myPic clear">
+				<div class="myCon clear">
+					<div class="img1"></div>
+					
+					<ul class="men1 clear">
+						<li><img src="images/common/deleteBtn.png" alt=""></li>
+						<li><img src="images/common/topMove.png" alt=""></li>
+						<li><img src="images/common/downMove.png" alt=""></li>
+						<li><img src="images/common/insertBtn.png" alt=""></li>
+						<li><img src="images/common/compile.png" alt=""></li>
+							
+					</ul>
+                 </div>
+              	</div>
+                 
+                <div class="comment clear">
+					<input type="text" name="" value="活动海报" class="activeName" disabled="disabled">
+					
+					<hr style="size: 1;">
+					<div class="projectDescript">
+						<span>描述：</span><textarea clos="5" rows="3" disabled="disabled">描述...</textarea>
+					</div><hr style="size: 1;">
+					<div class="panel1" id="demo1">
+						<div class="_panel-box panel-box1">
+							<div class="item otherItem clear">
+								<img src="images/common/aimg.gif" class="otherPhoto clear">
+								<div class="otherCon clear">
+									<p class="otherName clear">Olsen</p>
+									<span class="otherDis clear">请问这是哪？</span>
+								</div>
+							</div>
+						</div>
+					</div>  <!-- panel1 结束 -->
+					<hr style="size: 1;">
+					<input type="text" name="" class="addCon addCon1" placeholder="添加评论给好友">
+					<input type="button" name="" value="添加评论" class="addBtn addBtn1">
+					<hr style="size: 1;">
+					<div class="pmActive">
+						<img src="images/common/zan.png" class="zanA"><span class="zanN">&nbsp;12</span>&nbsp;
+						<img src="images/common/collect.png" class="shouA">
+						<span class="shouN">8</span>
+						<img src="images/common/share.png" class="pmShare">
+					</div>
+					
+                </div>
+				</div>	<!-- npm1 结束 -->
+				<div class="npm2">	<!-- npm2 开始 -->
+              	<div class="myPic clear">
+				<div class="myCon clear">
+					<div class="img1"></div>
+					
+					
+					<ul class="men1 clear">
+						<li><img src="images/common/deleteBtn.png" alt=""></li>
+						<li><img src="images/common/topMove.png" alt=""></li>
+						<li><img src="images/common/downMove.png" alt=""></li>
+						<li><img src="images/common/insertBtn.png" alt=""></li>
+						<li><img src="images/common/compile.png" alt=""></li>
+							
+					</ul>
+					<img src="images/common/play.png" class="playVideo">
+                 </div>
+              	</div>
+                 
+                <div class="comment clear">
+					<input type="text" name="" value="活动海报" class="activeName">
+					
+					<hr style="size: 1;">
+					<div class="projectDescript">
+						<span>描述：</span><textarea clos="5" rows="3">描述...</textarea>
+					</div><hr style="size: 1;">
+					<div class="panel1" id="demo2">
+						<div class="_panel-box  panel-box2">
+							<div class="item otherItem clear">
+								<img src="images/common/aimg.gif" class="otherPhoto clear">
+								<div class="otherCon clear">
+									<p class="otherName clear">Olsen</p>
+									<span class="otherDis clear">请问这是哪？</span>
+								</div>
+							</div>
+					<!--	<div class="itemM"><img src="tu/1.jpg" class="clear"><p></p><span class="clear">addaddadd</span></div>	-->
+						</div>
+					</div>  <!-- panel1 结束 -->
+					<hr style="size: 1;">
+					<input type="text" name="" class="addCon addCon2" placeholder="添加评论给好友">
+					<input type="button" name="" value="添加评论" class="addBtn addBtn2">
+					<hr style="size: 1;">
+					<div class="pmActive">
+						<img src="images/common/zan.png" class="zanA"><span class="zanN">&nbsp;12</span>&nbsp;
+						<img src="images/common/collect.png" class="shouA">
+						<span class="shouN">8</span>
+						<img src="images/common/share.png" class="pmShare">
+					</div>
+					
+                </div>
+				</div>	<!-- npm2 结束 -->
+              </div>   <!-- con1 结束 -->
+		</div>	
+	</div>
+	
 </div>	<!-- pmwrap 结束 -->
 </div>	<!-- class="mp-pusher" id="mp-pusher" 结束-->
 </div>	<!-- containerWrap 结束-->
